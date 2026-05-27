@@ -1,0 +1,90 @@
+{
+  "captured_at": "2026-05-27T22:35:21.117794Z",
+  "git_sha": "",
+  "posture_score": 95.0,
+  "finding_counts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 1,
+    "LOW": 2,
+    "INFO": 0
+  },
+  "findings_hash": "aa8ff8e13531160e974e3f305fde6bf751ba34456ca039888a79ab92d1e38dfb",
+  "findings": [
+    {
+      "rule_id": "CKV_AWS_189",
+      "severity": "MEDIUM",
+      "resource_type": "aws_ebs_volume",
+      "resource_name": "data",
+      "message": "Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)",
+      "file_path": "/compute.tf",
+      "line_range": [
+        30,
+        39
+      ],
+      "scanner": "checkov",
+      "is_regression": false,
+      "benchmark_controls": [
+        "CIS 2.2.1",
+        "NIST SC-28"
+      ],
+      "remediation": null,
+      "plain_english": null,
+      "blast_radius": null,
+      "exploitability_score": null,
+      "auto_remediable": true,
+      "dedup_key": "aws_ebs_volume::data::CKV_AWS_189",
+      "baseline_key": "CKV_AWS_189::data"
+    },
+    {
+      "rule_id": "CKV_AWS_135",
+      "severity": "LOW",
+      "resource_type": "aws_instance",
+      "resource_name": "app",
+      "message": "Ensure that EC2 is EBS optimized",
+      "file_path": "/compute.tf",
+      "line_range": [
+        3,
+        28
+      ],
+      "scanner": "checkov",
+      "is_regression": false,
+      "benchmark_controls": [
+        "CIS 2.2.1",
+        "NIST SI-4"
+      ],
+      "remediation": null,
+      "plain_english": null,
+      "blast_radius": null,
+      "exploitability_score": null,
+      "auto_remediable": true,
+      "dedup_key": "aws_instance::app::CKV_AWS_135",
+      "baseline_key": "CKV_AWS_135::app"
+    },
+    {
+      "rule_id": "CKV_AWS_18",
+      "severity": "LOW",
+      "resource_type": "aws_s3_bucket",
+      "resource_name": "assets",
+      "message": "Ensure the S3 bucket has access logging enabled",
+      "file_path": "/storage.tf",
+      "line_range": [
+        5,
+        12
+      ],
+      "scanner": "checkov",
+      "is_regression": false,
+      "benchmark_controls": [
+        "CIS 3.7",
+        "NIST AU-2"
+      ],
+      "remediation": null,
+      "plain_english": null,
+      "blast_radius": null,
+      "exploitability_score": null,
+      "auto_remediable": true,
+      "dedup_key": "aws_s3_bucket::assets::CKV_AWS_18",
+      "baseline_key": "CKV_AWS_18::assets"
+    }
+  ]
+}

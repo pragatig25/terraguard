@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TerraGuard — Terraform Security Regression Dashboard</title>
+  <meta name="description" content="Catch Terraform AWS security regressions before they ship. CIS/NIST-mapped posture scoring, AI triage, and auto-fix PRs." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css?v=1" />
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="app">
+  <div class="wrap">
+
+    <header class="topbar">
+      <div class="brand">
+        <svg class="shield" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 2L4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z" stroke="#E8602C" stroke-width="1.5" fill="rgba(232,96,44,0.10)"/>
+          <path d="M8.5 12.5l2.2 2.2 4.8-4.8" stroke="#E8602C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <h1>TerraGuard</h1>
+          <div class="tagline">Catch Terraform security regressions before they ship</div>
+        </div>
+      </div>
+      <div class="topbar-right">
+        <div class="mode-toggle" role="group" aria-label="Data mode">
+          <button id="btn-demo" class="active" onclick="window.TG.setMode(true)">DEMO</button>
+          <button id="btn-live" onclick="window.TG.setMode(false)">LIVE</button>
+        </div>
+        <a class="repo-link" href="https://github.com/pragatig25/terraguard" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.23 1.87.87 2.33.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.52.56.83 1.28.83 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <div id="mode-banner">
+      <b>Live mode</b> requires the TerraGuard pipeline configured in your own repository.
+      This public demo cannot access real scan results.
+      <button onclick="window.TG.setMode(true)">Switch back to Demo</button>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="gauge-wrap">
+        <canvas id="gauge" width="440" height="440"></canvas>
+        <div class="gauge-center">
+          <div class="gauge-score" id="hero-score">—</div>
+          <div class="gauge-label">Posture</div>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <div class="eyebrow">Current Security Posture</div>
+        <h2>Terraform AWS security, gated on every pull request.</h2>
+        <div class="hero-meta">
+          <span class="trend" id="hero-trend">—</span>
+          <span>Last scanned <b id="hero-when">—</b></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics -->
+    <section class="section">
+      <h3>Last 30 days</h3>
+      <div class="metric-row" id="metric-row">
+        <div class="card"><div class="label">Regressions</div><div class="value" id="m-reg">—</div><div class="sub" id="m-reg-sub">caught &amp; gated</div></div>
+        <div class="card"><div class="label">Auto-Fixed</div><div class="value" id="m-fix">—</div><div class="sub" id="m-fix-sub">via Claude PRs</div></div>
+        <div class="card"><div class="label">Controls Tested</div><div class="value" id="m-ctrl">—</div><div class="sub">CIS + NIST</div></div>
+        <div class="card"><div class="label">Mean Fix Time</div><div class="value" id="m-mttr">—</div><div class="sub">hrs to remediate</div></div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section">
+      <h3>Posture score timeline</h3>
+      <div class="chart-card">
+        <canvas id="timeline"></canvas>
+        <div class="chart-legend">
+          <span><span class="dot" style="background:#E8602C"></span>Posture score</span>
+          <span><span class="dot" style="background:#FF8C00"></span>Regression event</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Heatmap -->
+    <section class="section">
+      <h3>Regression frequency — last 12 months</h3>
+      <div class="chart-card">
+        <div id="heatmap"></div>
+      </div>
+    </section>
+
+    <!-- Benchmark coverage -->
+    <section class="section">
+      <h3>Benchmark coverage</h3>
+      <div class="chart-card benchmark-cols">
+        <div>
+          <table>
+            <thead><tr><th>CIS Control</th><th>Description</th><th>Status</th></tr></thead>
+            <tbody id="cis-body"></tbody>
+          </table>
+        </div>
+        <div>
+          <table>
+            <thead><tr><th>Top violated (30d)</th><th>Count</th></tr></thead>
+            <tbody id="top-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent runs -->
+    <section class="section">
+      <h3>Recent pipeline runs</h3>
+      <div class="chart-card">
+        <table>
+          <thead><tr><th>When</th><th>Branch</th><th>Score</th><th>Delta</th><th>Regressions</th><th>Auto-Fixed</th></tr></thead>
+          <tbody id="runs-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <h3>How it works</h3>
+      <div class="chart-card">
+        <div class="pipeline" id="pipeline">
+          <div class="pnode pulse" style="animation-delay:0s">Code Push</div><span class="parrow">→</span>
+          <div class="pnode pulse" style="animation-delay:.8s">GitHub Actions</div><span class="parrow">→</span>
+          <div class="pnode pulse" style="animation-delay:1.6s">Scan (Checkov · tfsec · Trivy)</div><span class="parrow">→</span>
+          <div class="pnode pulse" style="animation-delay:2.4s">AI Triage</div><span class="parrow">→</span>
+          <div class="pnode pulse" style="animation-delay:3.2s">Auto-Fix PR</div><span class="parrow">→</span>
+          <div class="pnode pulse" style="animation-delay:4s">Dashboard</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>TerraGuard · Open Source · Built with Checkov, tfsec, Trivy + Claude API</div>
+      <div class="links">
+        <a href="https://github.com/pragatig25/terraguard" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/pragatig25/terraguard#readme" target="_blank" rel="noopener">Documentation</a>
+        <a href="https://github.com/pragatig25/terraguard/issues" target="_blank" rel="noopener">Report Issue</a>
+      </div>
+      <div class="safety" id="safety-note">Demo mode: synthetic data only · No real AWS credentials used</div>
+    </footer>
+
+  </div>
+  </div>
+
+  <script src="./assets/js/charts.js?v=1"></script>
+  <script src="./assets/js/dashboard.js?v=1"></script>
+  <script src="./assets/js/demo-mode.js?v=1"></script>
+</body>
+</html>

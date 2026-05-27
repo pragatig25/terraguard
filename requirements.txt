@@ -1,0 +1,6 @@
+pydantic>=2.6
+python-hcl2>=4.3.5
+anthropic>=0.40.0
+PyGithub>=2.3.0
+structlog>=24.1.0
+python-dotenv>=1.0.1

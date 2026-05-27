@@ -1,0 +1,41 @@
+# TerraGuard Checkov configuration.
+# Scans Terraform statically (no AWS credentials, no apply).
+#
+# TerraGuard governs a *documented* CIS/NIST-mapped control set (see
+# benchmarks/mapping.json). Checkov is the authoritative scoring engine and is
+# restricted to that control set so the posture score is meaningful and
+# reproducible. tfsec + Trivy run for additional breadth (reported, not scored).
+framework:
+  - terraform
+compact: true
+download-external-modules: false
+check:
+  - CKV_AWS_8
+  - CKV_AWS_16
+  - CKV_AWS_17
+  - CKV_AWS_18
+  - CKV_AWS_19
+  - CKV_AWS_20
+  - CKV_AWS_21
+  - CKV_AWS_23
+  - CKV_AWS_24
+  - CKV_AWS_25
+  - CKV_AWS_36
+  - CKV_AWS_40
+  - CKV_AWS_57
+  - CKV_AWS_67
+  - CKV_AWS_79
+  - CKV_AWS_119
+  - CKV_AWS_129
+  - CKV_AWS_135
+  - CKV_AWS_145
+  - CKV_AWS_149
+  - CKV_AWS_157
+  - CKV_AWS_189
+  - CKV_AWS_260
+  - CKV_AWS_274
+  - CKV_AWS_355
+  - CKV2_AWS_6
+  - CKV2_AWS_35
+  - CKV2_AWS_56
+  - CKV2_AWS_57

@@ -1,0 +1,113 @@
+name: TerraGuard Security Regression
+
+on:
+  pull_request:
+    paths:
+      - "examples/terraform/**"
+      - "**.tf"
+      - "**.tfvars"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+env:
+  TERRAGUARD_SCAN_DIR: examples/terraform
+  TERRAGUARD_REPO: ${{ github.repository }}
+  TERRAGUARD_BASELINE: /tmp/baseline.json
+  TERRAGUARD_OUTPUT: /tmp/terraguard_results.json
+  TERRAGUARD_CURRENT_RESULTS: /tmp/terraguard_results.json
+  DASHBOARD_URL: ${{ vars.DASHBOARD_URL }}
+
+jobs:
+  terraguard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v4
+
+      - name: Fetch baseline from main
+        run: |
+          git fetch origin main --depth=1
+          git show origin/main:baseline/latest.json > /tmp/baseline.json 2>/dev/null \
+            || echo "{}" > /tmp/baseline.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install checkov pytest pytest-json-report
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: "1.8.0"
+
+      - name: Install tfsec + Trivy
+        run: |
+          curl -s https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash || true
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+
+      - name: Terraform init (static, no backend)
+        working-directory: examples/terraform
+        run: terraform init -backend=false
+        continue-on-error: true
+
+      - name: Run TerraGuard scan
+        run: python -m scanner.main
+
+      - name: Run regression tests
+        run: |
+          pytest regression/ -m "critical or high" \
+            --json-report --json-report-file=/tmp/pytest_report.json -v
+        env:
+          PYTEST_REPORT: /tmp/pytest_report.json
+        continue-on-error: true
+
+      - name: AI triage & benchmark mapping
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m ai.main_triage
+
+      - name: Generate auto-fix PR
+        if: vars.ENABLE_AUTO_FIX_PR != 'false'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BRANCH: ${{ github.head_ref }}
+        run: python -m autopr.main
+        continue-on-error: true
+
+      - name: Post PR comment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python -m ai.pr_comment
+
+      - name: Build run metrics (artifact only)
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BRANCH: ${{ github.head_ref }}
+          PYTEST_REPORT: /tmp/pytest_report.json
+        run: python -m metrics.main
+
+      - name: Upload run report
+        uses: actions/upload-artifact@v4
+        with:
+          name: terraguard-run
+          path: |
+            /tmp/terraguard_results.json
+            /tmp/pytest_report.json
+            docs/data/dashboard.json
+          if-no-files-found: warn
+
+      - name: Security gate (fail on CRITICAL regression)
+        run: python -m scanner.check_gate

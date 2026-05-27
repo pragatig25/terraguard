@@ -1,0 +1,17 @@
+{
+  "benchmark": "NIST SP 800-53 Rev. 5",
+  "scope": "Subset of controls relevant to AWS IaC security posture",
+  "controls": {
+    "AC-3":  { "title": "Access Enforcement" },
+    "AC-6":  { "title": "Least Privilege" },
+    "AU-2":  { "title": "Event Logging" },
+    "AU-9":  { "title": "Protection of Audit Information" },
+    "CM-7":  { "title": "Least Functionality" },
+    "CP-9":  { "title": "System Backup" },
+    "CP-10": { "title": "System Recovery and Reconstitution" },
+    "IA-5":  { "title": "Authenticator Management" },
+    "SC-7":  { "title": "Boundary Protection" },
+    "SC-28": { "title": "Protection of Information at Rest" },
+    "SI-4":  { "title": "System Monitoring" }
+  }
+}

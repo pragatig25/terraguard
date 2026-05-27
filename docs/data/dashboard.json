@@ -1,0 +1,45 @@
+{
+  "last_updated": "2026-05-27T22:43:09.659039Z",
+  "_demo": false,
+  "runs": [
+    {
+      "run_id": "e53e758b",
+      "timestamp": "2026-05-27T22:35:05.648078Z",
+      "git_sha": "",
+      "branch": "",
+      "pr_number": null,
+      "event_type": "merge",
+      "posture_score_before": 95.0,
+      "posture_score_after": 95.0,
+      "score_delta": 0.0,
+      "regressions_introduced": 0,
+      "regressions_by_severity": {},
+      "benchmarks_violated": [],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 3,
+        "tfsec": 0,
+        "trivy": 9
+      },
+      "duration_seconds": 0.0
+    }
+  ],
+  "current_posture_score": 95.0,
+  "posture_trend": [
+    {
+      "date": "2026-05-27",
+      "score": 95.0,
+      "pr_number": null,
+      "delta": 0.0,
+      "is_regression": false
+    }
+  ],
+  "top_violated_controls": [],
+  "regression_heatmap": [],
+  "total_regressions_30d": 0,
+  "total_auto_fixes_30d": 0,
+  "mean_time_to_remediate_hours": 0.0,
+  "controls_tested": 18,
+  "controls_total": 18
+}

@@ -1,0 +1,10 @@
+Fix this Terraform resource block to resolve the security regression. Return only the
+corrected HCL block.
+
+Rule ID: {rule_id}
+Benchmark controls: {benchmark_controls}
+Issue: {message}
+Fix guidance: {fix_description}
+
+Original block (file: {file_path}):
+{original_block}

@@ -1,0 +1,68 @@
+name: TerraGuard Baseline Capture
+
+# Runs on merge to main: re-scans main, updates the security baseline, and
+# publishes a real LIVE dashboard data point. The data commit then triggers
+# dashboard-deploy.yml (it touches docs/**, not *.tf, so it never re-triggers
+# this workflow).
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "examples/terraform/**"
+      - "**.tf"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  TERRAGUARD_SCAN_DIR: examples/terraform
+  TERRAGUARD_REPO: ${{ github.repository }}
+  TERRAGUARD_BASELINE: baseline/latest.json
+  TERRAGUARD_OUTPUT: /tmp/terraguard_results.json
+  TERRAGUARD_CURRENT_RESULTS: /tmp/terraguard_results.json
+  BRANCH: main
+
+jobs:
+  capture-baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install checkov
+
+      - name: Install tfsec + Trivy
+        run: |
+          curl -s https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash || true
+          curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin
+
+      - name: Capture new baseline
+        run: python -m scanner.main --baseline-capture
+
+      - name: Re-scan main against the previous baseline for the LIVE data point
+        run: |
+          git show HEAD~1:baseline/latest.json > /tmp/prev_baseline.json 2>/dev/null || echo "{}" > /tmp/prev_baseline.json
+          TERRAGUARD_BASELINE=/tmp/prev_baseline.json python -m scanner.main
+
+      - name: Publish LIVE dashboard data
+        run: TERRAGUARD_BASELINE=/tmp/prev_baseline.json python -m metrics.main
+
+      - name: Commit baseline + dashboard data
+        run: |
+          git config user.name "terraguard-bot"
+          git config user.email "terraguard@users.noreply.github.com"
+          git add baseline/latest.json docs/data/metrics.json docs/data/dashboard.json
+          git diff --staged --quiet || git commit -m "chore(terraguard): update baseline + live metrics"
+          git push

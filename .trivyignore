@@ -1,0 +1,3 @@
+# TerraGuard — Trivy IaC ignore list
+# Add rule IDs here to suppress known/accepted findings, one per line, e.g.:
+# AVD-AWS-0017

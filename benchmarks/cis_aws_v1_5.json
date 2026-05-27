@@ -1,0 +1,24 @@
+{
+  "benchmark": "CIS Amazon Web Services Foundations Benchmark",
+  "version": "1.5.0",
+  "controls": {
+    "1.4":   { "title": "Ensure no 'root' user account access key exists / MFA on root", "module": "test_iam.py" },
+    "1.16":  { "title": "Ensure IAM policies are attached only to groups or roles", "module": "test_iam.py" },
+    "1.20":  { "title": "Ensure Secrets Manager secrets are encrypted and rotated", "module": "test_secrets.py" },
+    "2.1.1": { "title": "Ensure S3 bucket server-side encryption is enabled", "module": "test_storage.py" },
+    "2.1.2": { "title": "Ensure S3 bucket public access is blocked", "module": "test_storage.py" },
+    "2.2.1": { "title": "Ensure EBS volume encryption is enabled", "module": "test_compute.py" },
+    "2.3.1": { "title": "Ensure RDS encryption at rest is enabled", "module": "test_database.py" },
+    "2.3.2": { "title": "Ensure RDS Multi-AZ is enabled", "module": "test_database.py" },
+    "2.3.3": { "title": "Ensure RDS instances are not publicly accessible", "module": "test_database.py" },
+    "3.1":   { "title": "Ensure CloudTrail is enabled in all regions", "module": "test_logging.py" },
+    "3.7":   { "title": "Ensure CloudTrail logs S3 bucket is not publicly accessible", "module": "test_storage.py" },
+    "3.8":   { "title": "Ensure CloudTrail logs are encrypted at rest with KMS CMK", "module": "test_logging.py" },
+    "4.1":   { "title": "Ensure no security group allows 0.0.0.0/0 to port 22", "module": "test_networking.py" },
+    "4.2":   { "title": "Ensure no security group allows 0.0.0.0/0 to port 3389", "module": "test_networking.py" },
+    "4.3":   { "title": "Ensure the default security group restricts all traffic", "module": "test_networking.py" },
+    "5.1":   { "title": "Ensure no Network ACL allows unrestricted ingress", "module": "test_networking.py" },
+    "5.2":   { "title": "Ensure VPC flow logging is enabled in all VPCs", "module": "test_logging.py" },
+    "5.6":   { "title": "Ensure EC2 instances require IMDSv2", "module": "test_compute.py" }
+  }
+}

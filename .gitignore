@@ -1,0 +1,31 @@
+# TerraGuard — never commit these
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+terraform.tfvars
+*.auto.tfvars
+baseline/sensitive/
+/tmp/terraguard_*
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

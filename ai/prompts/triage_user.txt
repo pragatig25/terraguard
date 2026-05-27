@@ -1,0 +1,11 @@
+Analyze this Terraform security regression and report via the `report_triage` tool.
+
+Rule ID: {rule_id}
+Scanner: {scanner}
+Severity (scanner-assigned): {severity}
+Mapped benchmark controls: {benchmark_controls}
+Resource: {resource_type}.{resource_name}
+Finding: {message}
+
+Resource configuration context:
+{resource_context}
