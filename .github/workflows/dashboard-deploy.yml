@@ -5,6 +5,14 @@ on:
     branches: [main]
     paths:
       - "docs/**"
+  # Redeploy after data-producing workflows commit new metrics/demo data.
+  # (A GITHUB_TOKEN push does not itself trigger a `push` event, so we chain
+  # the deploy off the upstream workflow completing instead.)
+  workflow_run:
+    workflows:
+      - "TerraGuard Baseline Capture"
+      - "Refresh Demo Data"
+    types: [completed]
   workflow_dispatch:
 
 permissions:
