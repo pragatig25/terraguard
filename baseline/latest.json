@@ -1,6 +1,6 @@
 {
-  "captured_at": "2026-05-27T22:35:21.117794Z",
-  "git_sha": "",
+  "captured_at": "2026-05-27T22:52:56.635154Z",
+  "git_sha": "80c948d401dba12958aea4e37acd9eb003f5e46c",
   "posture_score": 95.0,
   "finding_counts": {
     "CRITICAL": 0,
