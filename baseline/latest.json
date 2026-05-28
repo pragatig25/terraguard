@@ -1,67 +1,16 @@
 {
-  "captured_at": "2026-05-28T01:27:59.862602Z",
-  "git_sha": "c9b19d0a64860ef7004103f8183c82455416b83e",
-  "posture_score": 65.0,
+  "captured_at": "2026-05-28T01:34:36.214373Z",
+  "git_sha": "28d7e464e99f13b3f81a1b58ca03fecff8e72da9",
+  "posture_score": 95.0,
   "finding_counts": {
-    "CRITICAL": 1,
-    "HIGH": 1,
+    "CRITICAL": 0,
+    "HIGH": 0,
     "MEDIUM": 1,
     "LOW": 2,
     "INFO": 0
   },
-  "findings_hash": "e00a2d31ab9f49b0d46153199b38686b90d671bf2522c5bd8bf7b7528335c5c4",
+  "findings_hash": "aa8ff8e13531160e974e3f305fde6bf751ba34456ca039888a79ab92d1e38dfb",
   "findings": [
-    {
-      "rule_id": "CKV_AWS_24",
-      "severity": "CRITICAL",
-      "resource_type": "aws_security_group",
-      "resource_name": "app",
-      "message": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
-      "file_path": "/networking.tf",
-      "line_range": [
-        25,
-        57
-      ],
-      "scanner": "checkov",
-      "is_regression": false,
-      "benchmark_controls": [
-        "CIS 4.1",
-        "NIST AC-3",
-        "NIST SC-7"
-      ],
-      "remediation": null,
-      "plain_english": null,
-      "blast_radius": null,
-      "exploitability_score": null,
-      "auto_remediable": true,
-      "dedup_key": "aws_security_group::app::CKV_AWS_24",
-      "baseline_key": "CKV_AWS_24::app"
-    },
-    {
-      "rule_id": "CKV_AWS_145",
-      "severity": "HIGH",
-      "resource_type": "aws_s3_bucket",
-      "resource_name": "assets",
-      "message": "Ensure that S3 buckets are encrypted with KMS by default",
-      "file_path": "/storage.tf",
-      "line_range": [
-        5,
-        12
-      ],
-      "scanner": "checkov",
-      "is_regression": false,
-      "benchmark_controls": [
-        "CIS 2.1.1",
-        "NIST SC-28"
-      ],
-      "remediation": null,
-      "plain_english": null,
-      "blast_radius": null,
-      "exploitability_score": null,
-      "auto_remediable": true,
-      "dedup_key": "aws_s3_bucket::assets::CKV_AWS_145",
-      "baseline_key": "CKV_AWS_145::assets"
-    },
     {
       "rule_id": "CKV_AWS_189",
       "severity": "MEDIUM",

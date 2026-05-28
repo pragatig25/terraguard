@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T01:28:04.644040Z",
+  "last_updated": "2026-05-28T01:34:40.851839Z",
   "_demo": false,
   "runs": [
     {
@@ -76,9 +76,31 @@
         "trivy": 10
       },
       "duration_seconds": 0.0
+    },
+    {
+      "run_id": "e8d76009",
+      "timestamp": "2026-05-28T01:34:40.620644Z",
+      "git_sha": "28d7e464e99f13b3f81a1b58ca03fecff8e72da9",
+      "branch": "main",
+      "pr_number": null,
+      "event_type": "merge",
+      "posture_score_before": 65.0,
+      "posture_score_after": 95.0,
+      "score_delta": 30.0,
+      "regressions_introduced": 0,
+      "regressions_by_severity": {},
+      "benchmarks_violated": [],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 3,
+        "tfsec": 10,
+        "trivy": 9
+      },
+      "duration_seconds": 0.0
     }
   ],
-  "current_posture_score": 65.0,
+  "current_posture_score": 95.0,
   "posture_trend": [
     {
       "date": "2026-05-27",
@@ -100,6 +122,13 @@
       "pr_number": null,
       "delta": -30.0,
       "is_regression": true
+    },
+    {
+      "date": "2026-05-28",
+      "score": 95.0,
+      "pr_number": null,
+      "delta": 30.0,
+      "is_regression": false
     }
   ],
   "top_violated_controls": [
@@ -133,7 +162,7 @@
   ],
   "total_regressions_30d": 2,
   "total_auto_fixes_30d": 0,
-  "mean_time_to_remediate_hours": 0.0,
+  "mean_time_to_remediate_hours": 0.1,
   "controls_tested": 18,
   "controls_total": 18
 }
