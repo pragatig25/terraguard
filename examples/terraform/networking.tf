@@ -28,11 +28,11 @@ resource "aws_security_group" "app" {
   vpc_id      = aws_vpc.main.id
 
   ingress {
-    description = "SSH open for debugging"
+    description = "SSH from internal management subnet only"
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["10.0.0.0/8"]
   }
 
   ingress {
