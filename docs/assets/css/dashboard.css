@@ -35,9 +35,16 @@ code { font-family: var(--mono); font-size: .86em; background: var(--sunk); padd
 .mode-toggle button.active { background: var(--accent); color: #fff; }
 
 /* --- Live banner --- */
-#mode-banner { display: none; margin-top: 16px; background: var(--accent-dim); border: 1px solid var(--accent); border-radius: 8px; padding: 12px 16px; font-size: 13px; color: var(--ink); }
-#mode-banner b { color: var(--accent); }
-#mode-banner button { margin-left: 12px; font-size: 12px; cursor: pointer; background: transparent; border: 1px solid var(--line); color: var(--ink); border-radius: 4px; padding: 3px 10px; }
+#mode-banner { display: none; margin-top: 16px; background: linear-gradient(180deg, #FBF1EA, var(--surface)); border: 1px solid var(--accent-soft); border-radius: 16px; padding: 24px; font-size: 14px; color: var(--ink); }
+.banner-head { font-family: var(--display); font-size: 18px; margin-bottom: 12px; }
+.banner-head b { color: var(--accent); }
+.banner-body p { color: var(--muted); font-size: 14px; margin-bottom: 12px; max-width: 640px; }
+.banner-body ol { margin: 0 0 12px 20px; color: var(--ink); font-size: 13.5px; line-height: 1.8; }
+.banner-body ol b { font-weight: 600; }
+.banner-body ol code { font-size: 12px; }
+.banner-note { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+#mode-banner > button { margin-top: 8px; font-family: var(--sans); font-size: 13px; font-weight: 600; cursor: pointer; background: transparent; border: 1px solid var(--line); color: var(--ink); border-radius: 8px; padding: 8px 16px; transition: border-color .15s; }
+#mode-banner > button:hover { border-color: var(--accent-soft); }
 
 /* --- Hero --- */
 .hero { display: grid; grid-template-columns: 1fr 240px; gap: 48px; align-items: center; padding: 96px 24px 64px; }

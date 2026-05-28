@@ -16,7 +16,6 @@
       window.TG.render(data);
     } catch (err) {
       if (!isDemo) {
-        // LIVE data not present (no pipeline runs yet) — guide the user.
         renderEmptyLive();
       } else {
         console.error("Failed to load demo data", err);
@@ -26,13 +25,17 @@
 
   function renderEmptyLive() {
     document.getElementById("hero-score").textContent = "—";
+    document.getElementById("hero-score").style.color = "#6F6A60";
     document.getElementById("hero-trend").textContent = "awaiting first pipeline run";
     document.getElementById("hero-trend").className = "trend";
-    ["m-reg", "m-fix", "m-ctrl", "m-mttr"].forEach((id) => {
+    ["m-reg", "m-fix", "m-ctrl", "m-mttr"].forEach(function (id) {
       document.getElementById(id).textContent = "—";
     });
     document.getElementById("runs-body").innerHTML =
-      '<tr><td class="muted" colspan="6">No live runs yet. Merge a PR to populate this dashboard.</td></tr>';
+      '<tr><td class="muted" colspan="6">' +
+      'No live data yet. Open a PR that modifies a <code>.tf</code> file, ' +
+      'then merge it to populate real scan results here.' +
+      '</td></tr>';
   }
 
   function setMode(demo) {
@@ -49,9 +52,6 @@
   window.TG = window.TG || {};
   window.TG.setMode = setMode;
 
-  document.addEventListener("DOMContentLoaded", () => setMode(true));
-  window.addEventListener("resize", () => {
-    // Redraw the timeline on resize (it is width-responsive).
-    load();
-  });
+  document.addEventListener("DOMContentLoaded", function () { setMode(true); });
+  window.addEventListener("resize", function () { load(); });
 })();
