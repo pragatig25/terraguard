@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27T22:53:01.239071Z",
+  "last_updated": "2026-05-28T01:28:04.643842Z",
   "runs": [
     {
       "run_id": "e53e758b",
@@ -42,6 +42,37 @@
         "checkov": 3,
         "tfsec": 10,
         "trivy": 9
+      },
+      "duration_seconds": 0.0
+    },
+    {
+      "run_id": "b18167e1",
+      "timestamp": "2026-05-28T01:28:04.407517Z",
+      "git_sha": "c9b19d0a64860ef7004103f8183c82455416b83e",
+      "branch": "main",
+      "pr_number": null,
+      "event_type": "merge",
+      "posture_score_before": 95.0,
+      "posture_score_after": 65.0,
+      "score_delta": -30.0,
+      "regressions_introduced": 2,
+      "regressions_by_severity": {
+        "CRITICAL": 1,
+        "HIGH": 1
+      },
+      "benchmarks_violated": [
+        "CIS 2.1.1",
+        "CIS 4.1",
+        "NIST AC-3",
+        "NIST SC-28",
+        "NIST SC-7"
+      ],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 5,
+        "tfsec": 11,
+        "trivy": 10
       },
       "duration_seconds": 0.0
     }
