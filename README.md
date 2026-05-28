@@ -115,6 +115,27 @@ Settings → Pages → Source: **GitHub Actions**. The first `dashboard-deploy` 
 3. In repo Settings → Pages, set the custom domain and enable **Enforce HTTPS**.
 4. Re-run the `dashboard-deploy` workflow.
 
+## Security (public repo)
+
+This repo is safe to keep public. All workflows are hardened against abuse:
+
+| Protection | Where | What it does |
+|---|---|---|
+| **Fork PR blocked** | `security-regression.yml` | Job-level `if` checks `head.repo.full_name == github.repository` — fork PRs are silently skipped, so strangers cannot burn API credits or compute |
+| **API key gated** | AI triage + auto-fix steps | Steps only run when `ANTHROPIC_API_KEY` secret is present; fork PRs never see secrets |
+| **`workflow_dispatch` owner-only** | All 4 workflows | `github.actor == github.repository_owner` guard on manual triggers |
+| **Push to `main` protected** | `baseline-capture.yml` | Only collaborators with write access can push to `main` |
+| **No real AWS credentials** | Entire pipeline | Scans run `terraform init -backend=false` — purely static analysis |
+| **PR comment sanitization** | `ai/pr_comment.py` | IPs, CIDRs, ARNs, and account IDs are stripped before posting |
+
+### Recommended repo settings
+
+After making the repo public, configure these in **Settings → Actions → General**:
+
+1. **Fork pull request workflows** → "Require approval for first-time contributors"
+2. **Workflow permissions** → "Read repository contents and packages permissions" (least privilege)
+3. **Allow GitHub Actions to create and approve pull requests** → enabled (for auto-fix PRs)
+
 ## Demo mode & public safety
 
 The public dashboard defaults to **DEMO** mode and renders only synthetic data

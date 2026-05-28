@@ -8,37 +8,35 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/dashboard.css?v=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M12 2L4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z' fill='%23C15F3C'/><path d='M8.5 12.5l2.2 2.2 4.8-4.8' stroke='white' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>" />
+  <link rel="stylesheet" href="./assets/css/dashboard.css?v=2" />
 </head>
 <body>
-  <div class="grid-bg"></div>
-  <div class="app">
-  <div class="wrap">
-
-    <header class="topbar">
-      <div class="brand">
+  <header class="site">
+    <div class="wrap bar">
+      <div class="logo">
         <svg class="shield" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M12 2L4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z" stroke="#E8602C" stroke-width="1.5" fill="rgba(232,96,44,0.10)"/>
-          <path d="M8.5 12.5l2.2 2.2 4.8-4.8" stroke="#E8602C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 2L4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5l-8-3z" stroke="#C15F3C" stroke-width="1.5" fill="rgba(193,95,60,0.10)"/>
+          <path d="M8.5 12.5l2.2 2.2 4.8-4.8" stroke="#C15F3C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <div>
-          <h1>TerraGuard</h1>
-          <div class="tagline">Catch Terraform security regressions before they ship</div>
-        </div>
+        Terra<span>Guard</span>
       </div>
-      <div class="topbar-right">
+      <nav class="top-nav">
+        <a href="#metrics">Metrics</a>
+        <a href="#trend">Timeline</a>
+        <a href="#pipeline">How it works</a>
         <div class="mode-toggle" role="group" aria-label="Data mode">
           <button id="btn-demo" class="active" onclick="window.TG.setMode(true)">DEMO</button>
           <button id="btn-live" onclick="window.TG.setMode(false)">LIVE</button>
         </div>
-        <a class="repo-link" href="https://github.com/pragatig25/terraguard" target="_blank" rel="noopener">
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.34c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.23 1.87.87 2.33.67.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.52.56.83 1.28.83 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-          GitHub
-        </a>
-      </div>
-    </header>
+        <a class="ghost" href="https://github.com/pragatig25/terraguard" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="app">
+  <div class="wrap">
 
     <div id="mode-banner">
       <b>Live mode</b> requires the TerraGuard pipeline configured in your own repository.
@@ -48,16 +46,28 @@
 
     <!-- Hero -->
     <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">TerraGuard · Terraform security regression pipeline</p>
+        <h1>Catch Terraform security<br />regressions before they ship.</h1>
+        <p class="lede">
+          Misconfigured S3 buckets, open security groups, unencrypted RDS — infrastructure
+          drift slips past code review and reaches production, where it becomes a
+          <em>compliance incident</em>. TerraGuard scans every pull request with Checkov, tfsec,
+          and Trivy, scores your posture against CIS &amp; NIST benchmarks, and opens
+          <em>auto-fix PRs</em> via Claude when regressions are found.
+        </p>
+        <dl class="value">
+          <div><dt>15 CIS controls</dt><dd>continuously validated against AWS Foundations v1.5</dd></div>
+          <div><dt>Pre-merge</dt><dd>regressions caught in CI — not in production audits</dd></div>
+          <div><dt>Auto-fix PRs</dt><dd>AI-triaged remediations opened automatically</dd></div>
+        </dl>
+      </div>
       <div class="gauge-wrap">
         <canvas id="gauge" width="440" height="440"></canvas>
         <div class="gauge-center">
           <div class="gauge-score" id="hero-score">—</div>
           <div class="gauge-label">Posture</div>
         </div>
-      </div>
-      <div class="hero-copy">
-        <div class="eyebrow">Current Security Posture</div>
-        <h2>Terraform AWS security, gated on every pull request.</h2>
         <div class="hero-meta">
           <span class="trend" id="hero-trend">—</span>
           <span>Last scanned <b id="hero-when">—</b></span>
@@ -66,7 +76,7 @@
     </section>
 
     <!-- Metrics -->
-    <section class="section">
+    <section id="metrics" class="section">
       <h3>Last 30 days</h3>
       <div class="metric-row" id="metric-row">
         <div class="card"><div class="label">Regressions</div><div class="value" id="m-reg">—</div><div class="sub" id="m-reg-sub">caught &amp; gated</div></div>
@@ -77,13 +87,13 @@
     </section>
 
     <!-- Timeline -->
-    <section class="section">
+    <section id="trend" class="section">
       <h3>Posture score timeline</h3>
       <div class="chart-card">
         <canvas id="timeline"></canvas>
         <div class="chart-legend">
-          <span><span class="dot" style="background:#E8602C"></span>Posture score</span>
-          <span><span class="dot" style="background:#FF8C00"></span>Regression event</span>
+          <span><span class="dot" style="background:#C15F3C"></span>Posture score</span>
+          <span><span class="dot" style="background:#B8762E"></span>Regression event</span>
         </div>
       </div>
     </section>
@@ -127,10 +137,10 @@
     </section>
 
     <!-- How it works -->
-    <section class="section">
+    <section id="pipeline" class="section">
       <h3>How it works</h3>
       <div class="chart-card">
-        <div class="pipeline" id="pipeline">
+        <div class="pipeline">
           <div class="pnode pulse" style="animation-delay:0s">Code Push</div><span class="parrow">→</span>
           <div class="pnode pulse" style="animation-delay:.8s">GitHub Actions</div><span class="parrow">→</span>
           <div class="pnode pulse" style="animation-delay:1.6s">Scan (Checkov · tfsec · Trivy)</div><span class="parrow">→</span>
@@ -141,14 +151,12 @@
       </div>
     </section>
 
-    <footer>
-      <div>TerraGuard · Open Source · Built with Checkov, tfsec, Trivy + Claude API</div>
-      <div class="links">
-        <a href="https://github.com/pragatig25/terraguard" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://github.com/pragatig25/terraguard#readme" target="_blank" rel="noopener">Documentation</a>
-        <a href="https://github.com/pragatig25/terraguard/issues" target="_blank" rel="noopener">Report Issue</a>
+    <footer class="site-foot">
+      <div class="wrap">
+        <p>Built by Pragati Gupta · Senior QE&nbsp;AI</p>
+        <p id="safety-note">Demo mode: synthetic data only · No real AWS credentials used</p>
+        <p><a href="https://github.com/pragatig25/terraguard" target="_blank" rel="noopener">Source on GitHub ↗</a></p>
       </div>
-      <div class="safety" id="safety-note">Demo mode: synthetic data only · No real AWS credentials used</div>
     </footer>
 
   </div>

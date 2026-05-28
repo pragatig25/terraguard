@@ -24,6 +24,13 @@ env:
 jobs:
   terraguard:
     runs-on: ubuntu-latest
+    # Block fork PRs (strangers can't burn our API key or compute).
+    # workflow_dispatch restricted to repo owner.
+    if: >-
+      (github.event_name == 'pull_request'
+        && github.event.pull_request.head.repo.full_name == github.repository)
+      || (github.event_name == 'workflow_dispatch'
+        && github.actor == github.repository_owner)
     steps:
       - name: Checkout PR branch
         uses: actions/checkout@v4
@@ -72,12 +79,13 @@ jobs:
         continue-on-error: true
 
       - name: AI triage & benchmark mapping
+        if: ${{ secrets.ANTHROPIC_API_KEY != '' }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -m ai.main_triage
 
       - name: Generate auto-fix PR
-        if: vars.ENABLE_AUTO_FIX_PR != 'false'
+        if: ${{ vars.ENABLE_AUTO_FIX_PR != 'false' && secrets.ANTHROPIC_API_KEY != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

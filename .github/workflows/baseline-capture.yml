@@ -27,6 +27,10 @@ env:
 jobs:
   capture-baseline:
     runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'push'
+      || (github.event_name == 'workflow_dispatch'
+        && github.actor == github.repository_owner)
     steps:
       - uses: actions/checkout@v4
         with:

@@ -11,6 +11,10 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    if: >-
+      github.event_name == 'schedule'
+      || (github.event_name == 'workflow_dispatch'
+        && github.actor == github.repository_owner)
     steps:
       - uses: actions/checkout@v4
 
