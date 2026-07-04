@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-07-03T09:21:41.855991Z",
+  "last_updated": "2026-07-04T08:40:16.647493Z",
   "_demo": true,
   "runs": [
     {
       "run_id": "demo0100",
-      "timestamp": "2026-05-20T11:31:00.852958Z",
+      "timestamp": "2026-05-20T11:31:00.645283Z",
       "git_sha": "63650c4",
       "branch": "feat/demo-100",
       "pr_number": 200,
@@ -26,7 +26,7 @@
     },
     {
       "run_id": "demo0102",
-      "timestamp": "2026-05-20T13:26:00.852958Z",
+      "timestamp": "2026-05-20T13:26:00.645283Z",
       "git_sha": "c476f74",
       "branch": "feat/demo-102",
       "pr_number": 202,
@@ -48,7 +48,7 @@
     },
     {
       "run_id": "demo0104",
-      "timestamp": "2026-05-21T18:47:00.852958Z",
+      "timestamp": "2026-05-21T18:47:00.645283Z",
       "git_sha": "09babac",
       "branch": "feat/demo-104",
       "pr_number": 204,
@@ -70,7 +70,7 @@
     },
     {
       "run_id": "demo0105",
-      "timestamp": "2026-05-22T11:32:00.852958Z",
+      "timestamp": "2026-05-22T11:32:00.645283Z",
       "git_sha": "f4c228e",
       "branch": "feat/demo-105",
       "pr_number": 205,
@@ -98,7 +98,7 @@
     },
     {
       "run_id": "demo0106",
-      "timestamp": "2026-05-22T17:29:23.996681Z",
+      "timestamp": "2026-05-22T17:29:23.789006Z",
       "git_sha": "45467f5",
       "branch": "main",
       "pr_number": null,
@@ -120,7 +120,7 @@
     },
     {
       "run_id": "demo0108",
-      "timestamp": "2026-05-25T11:10:00.852958Z",
+      "timestamp": "2026-05-25T11:10:00.645283Z",
       "git_sha": "6612a93",
       "branch": "feat/demo-108",
       "pr_number": 208,
@@ -148,7 +148,7 @@
     },
     {
       "run_id": "demo0107",
-      "timestamp": "2026-05-25T12:40:00.852958Z",
+      "timestamp": "2026-05-25T12:40:00.645283Z",
       "git_sha": "fa1db5d",
       "branch": "feat/demo-107",
       "pr_number": 207,
@@ -170,7 +170,7 @@
     },
     {
       "run_id": "demo0111",
-      "timestamp": "2026-05-25T13:30:00.852958Z",
+      "timestamp": "2026-05-25T13:30:00.645283Z",
       "git_sha": "35b7b6e",
       "branch": "feat/demo-111",
       "pr_number": 211,
@@ -192,7 +192,7 @@
     },
     {
       "run_id": "demo0109",
-      "timestamp": "2026-05-25T14:40:24.562078Z",
+      "timestamp": "2026-05-25T14:40:24.354403Z",
       "git_sha": "02b042c",
       "branch": "main",
       "pr_number": null,
@@ -214,7 +214,7 @@
     },
     {
       "run_id": "demo0110",
-      "timestamp": "2026-05-25T17:33:00.852958Z",
+      "timestamp": "2026-05-25T17:33:00.645283Z",
       "git_sha": "adc8be6",
       "branch": "feat/demo-110",
       "pr_number": 210,
@@ -236,7 +236,7 @@
     },
     {
       "run_id": "demo0114",
-      "timestamp": "2026-05-26T12:53:00.852958Z",
+      "timestamp": "2026-05-26T12:53:00.645283Z",
       "git_sha": "6f22827",
       "branch": "feat/demo-114",
       "pr_number": 214,
@@ -258,7 +258,7 @@
     },
     {
       "run_id": "demo0112",
-      "timestamp": "2026-05-26T13:54:00.852958Z",
+      "timestamp": "2026-05-26T13:54:00.645283Z",
       "git_sha": "5abe612",
       "branch": "feat/demo-112",
       "pr_number": 212,
@@ -280,7 +280,7 @@
     },
     {
       "run_id": "demo0113",
-      "timestamp": "2026-05-26T16:15:00.852958Z",
+      "timestamp": "2026-05-26T16:15:00.645283Z",
       "git_sha": "ae73acc",
       "branch": "feat/demo-113",
       "pr_number": 213,
@@ -302,7 +302,7 @@
     },
     {
       "run_id": "demo0115",
-      "timestamp": "2026-05-27T14:23:00.852958Z",
+      "timestamp": "2026-05-27T14:23:00.645283Z",
       "git_sha": "28d10e4",
       "branch": "feat/demo-115",
       "pr_number": 215,
@@ -329,7 +329,7 @@
     },
     {
       "run_id": "demo0117",
-      "timestamp": "2026-05-27T17:43:00.852958Z",
+      "timestamp": "2026-05-27T17:43:00.645283Z",
       "git_sha": "65d7bba",
       "branch": "feat/demo-117",
       "pr_number": 217,
@@ -351,7 +351,7 @@
     },
     {
       "run_id": "demo0116",
-      "timestamp": "2026-05-27T18:21:00.852958Z",
+      "timestamp": "2026-05-27T18:21:00.645283Z",
       "git_sha": "7efda37",
       "branch": "feat/demo-116",
       "pr_number": 216,
@@ -373,7 +373,7 @@
     },
     {
       "run_id": "demo0118",
-      "timestamp": "2026-05-28T14:13:00.852958Z",
+      "timestamp": "2026-05-28T14:13:00.645283Z",
       "git_sha": "03bc319",
       "branch": "feat/demo-118",
       "pr_number": 218,
@@ -395,7 +395,7 @@
     },
     {
       "run_id": "demo0121",
-      "timestamp": "2026-06-01T10:32:00.852958Z",
+      "timestamp": "2026-06-01T10:32:00.645283Z",
       "git_sha": "8a051e9",
       "branch": "feat/demo-121",
       "pr_number": 221,
@@ -417,7 +417,7 @@
     },
     {
       "run_id": "demo0119",
-      "timestamp": "2026-06-01T11:31:00.852958Z",
+      "timestamp": "2026-06-01T11:31:00.645283Z",
       "git_sha": "864ab1e",
       "branch": "feat/demo-119",
       "pr_number": 219,
@@ -439,7 +439,7 @@
     },
     {
       "run_id": "demo0120",
-      "timestamp": "2026-06-01T13:31:00.852958Z",
+      "timestamp": "2026-06-01T13:31:00.645283Z",
       "git_sha": "d260e5c",
       "branch": "feat/demo-120",
       "pr_number": 220,
@@ -461,7 +461,7 @@
     },
     {
       "run_id": "demo0124",
-      "timestamp": "2026-06-02T09:39:00.852958Z",
+      "timestamp": "2026-06-02T09:39:00.645283Z",
       "git_sha": "baa0158",
       "branch": "feat/demo-124",
       "pr_number": 224,
@@ -483,7 +483,7 @@
     },
     {
       "run_id": "demo0125",
-      "timestamp": "2026-06-02T12:49:00.852958Z",
+      "timestamp": "2026-06-02T12:49:00.645283Z",
       "git_sha": "d2e9acf",
       "branch": "feat/demo-125",
       "pr_number": 225,
@@ -505,7 +505,7 @@
     },
     {
       "run_id": "demo0122",
-      "timestamp": "2026-06-02T16:54:00.852958Z",
+      "timestamp": "2026-06-02T16:54:00.645283Z",
       "git_sha": "eb9915b",
       "branch": "feat/demo-122",
       "pr_number": 222,
@@ -532,7 +532,7 @@
     },
     {
       "run_id": "demo0123",
-      "timestamp": "2026-06-02T21:36:10.825116Z",
+      "timestamp": "2026-06-02T21:36:10.617441Z",
       "git_sha": "3f8814d",
       "branch": "main",
       "pr_number": null,
@@ -554,7 +554,7 @@
     },
     {
       "run_id": "demo0126",
-      "timestamp": "2026-06-03T09:16:00.852958Z",
+      "timestamp": "2026-06-03T09:16:00.645283Z",
       "git_sha": "9dba339",
       "branch": "feat/demo-126",
       "pr_number": 226,
@@ -576,7 +576,7 @@
     },
     {
       "run_id": "demo0127",
-      "timestamp": "2026-06-03T14:59:00.852958Z",
+      "timestamp": "2026-06-03T14:59:00.645283Z",
       "git_sha": "b9f2fe7",
       "branch": "feat/demo-127",
       "pr_number": 227,
@@ -598,7 +598,7 @@
     },
     {
       "run_id": "demo0128",
-      "timestamp": "2026-06-03T16:22:00.852958Z",
+      "timestamp": "2026-06-03T16:22:00.645283Z",
       "git_sha": "715fac7",
       "branch": "feat/demo-128",
       "pr_number": 228,
@@ -620,7 +620,7 @@
     },
     {
       "run_id": "demo0129",
-      "timestamp": "2026-06-04T10:52:00.852958Z",
+      "timestamp": "2026-06-04T10:52:00.645283Z",
       "git_sha": "6f213e6",
       "branch": "feat/demo-129",
       "pr_number": 229,
@@ -642,7 +642,7 @@
     },
     {
       "run_id": "demo0130",
-      "timestamp": "2026-06-05T15:56:00.852958Z",
+      "timestamp": "2026-06-05T15:56:00.645283Z",
       "git_sha": "2c4578b",
       "branch": "feat/demo-130",
       "pr_number": 230,
@@ -664,7 +664,7 @@
     },
     {
       "run_id": "demo0131",
-      "timestamp": "2026-06-05T16:59:00.852958Z",
+      "timestamp": "2026-06-05T16:59:00.645283Z",
       "git_sha": "09b3718",
       "branch": "feat/demo-131",
       "pr_number": 231,
@@ -686,7 +686,7 @@
     },
     {
       "run_id": "demo0135",
-      "timestamp": "2026-06-08T11:22:00.852958Z",
+      "timestamp": "2026-06-08T11:22:00.645283Z",
       "git_sha": "5649707",
       "branch": "feat/demo-135",
       "pr_number": 235,
@@ -708,7 +708,7 @@
     },
     {
       "run_id": "demo0132",
-      "timestamp": "2026-06-08T13:26:00.852958Z",
+      "timestamp": "2026-06-08T13:26:00.645283Z",
       "git_sha": "44d2abe",
       "branch": "feat/demo-132",
       "pr_number": 232,
@@ -735,7 +735,7 @@
     },
     {
       "run_id": "demo0134",
-      "timestamp": "2026-06-08T14:41:00.852958Z",
+      "timestamp": "2026-06-08T14:41:00.645283Z",
       "git_sha": "43fbe5c",
       "branch": "feat/demo-134",
       "pr_number": 234,
@@ -757,7 +757,7 @@
     },
     {
       "run_id": "demo0133",
-      "timestamp": "2026-06-08T16:25:50.074164Z",
+      "timestamp": "2026-06-08T16:25:49.866489Z",
       "git_sha": "e5c45e2",
       "branch": "main",
       "pr_number": null,
@@ -779,7 +779,7 @@
     },
     {
       "run_id": "demo0137",
-      "timestamp": "2026-06-09T13:11:00.852958Z",
+      "timestamp": "2026-06-09T13:11:00.645283Z",
       "git_sha": "6a03cc9",
       "branch": "feat/demo-137",
       "pr_number": 237,
@@ -801,7 +801,7 @@
     },
     {
       "run_id": "demo0136",
-      "timestamp": "2026-06-09T14:14:00.852958Z",
+      "timestamp": "2026-06-09T14:14:00.645283Z",
       "git_sha": "e4abfa4",
       "branch": "feat/demo-136",
       "pr_number": 236,
@@ -823,7 +823,7 @@
     },
     {
       "run_id": "demo0138",
-      "timestamp": "2026-06-09T14:28:00.852958Z",
+      "timestamp": "2026-06-09T14:28:00.645283Z",
       "git_sha": "1980002",
       "branch": "feat/demo-138",
       "pr_number": 238,
@@ -845,7 +845,7 @@
     },
     {
       "run_id": "demo0143",
-      "timestamp": "2026-06-10T11:23:00.852958Z",
+      "timestamp": "2026-06-10T11:23:00.645283Z",
       "git_sha": "c420cac",
       "branch": "feat/demo-143",
       "pr_number": 243,
@@ -867,7 +867,7 @@
     },
     {
       "run_id": "demo0139",
-      "timestamp": "2026-06-10T14:51:00.852958Z",
+      "timestamp": "2026-06-10T14:51:00.645283Z",
       "git_sha": "7f4d75a",
       "branch": "feat/demo-139",
       "pr_number": 239,
@@ -889,7 +889,7 @@
     },
     {
       "run_id": "demo0142",
-      "timestamp": "2026-06-10T17:36:00.852958Z",
+      "timestamp": "2026-06-10T17:36:00.645283Z",
       "git_sha": "fbf7780",
       "branch": "feat/demo-142",
       "pr_number": 242,
@@ -911,7 +911,7 @@
     },
     {
       "run_id": "demo0140",
-      "timestamp": "2026-06-10T18:03:00.852958Z",
+      "timestamp": "2026-06-10T18:03:00.645283Z",
       "git_sha": "405e2f8",
       "branch": "feat/demo-140",
       "pr_number": 240,
@@ -938,7 +938,7 @@
     },
     {
       "run_id": "demo0141",
-      "timestamp": "2026-06-10T21:19:54.022059Z",
+      "timestamp": "2026-06-10T21:19:53.814384Z",
       "git_sha": "8e6f295",
       "branch": "main",
       "pr_number": null,
@@ -960,7 +960,7 @@
     },
     {
       "run_id": "demo0146",
-      "timestamp": "2026-06-11T10:16:00.852958Z",
+      "timestamp": "2026-06-11T10:16:00.645283Z",
       "git_sha": "ca56406",
       "branch": "feat/demo-146",
       "pr_number": 246,
@@ -987,7 +987,7 @@
     },
     {
       "run_id": "demo0145",
-      "timestamp": "2026-06-11T10:31:00.852958Z",
+      "timestamp": "2026-06-11T10:31:00.645283Z",
       "git_sha": "bab7531",
       "branch": "feat/demo-145",
       "pr_number": 245,
@@ -1009,7 +1009,7 @@
     },
     {
       "run_id": "demo0144",
-      "timestamp": "2026-06-11T14:34:00.852958Z",
+      "timestamp": "2026-06-11T14:34:00.645283Z",
       "git_sha": "b8da54f",
       "branch": "feat/demo-144",
       "pr_number": 244,
@@ -1031,7 +1031,7 @@
     },
     {
       "run_id": "demo0147",
-      "timestamp": "2026-06-12T18:58:00.852958Z",
+      "timestamp": "2026-06-12T18:58:00.645283Z",
       "git_sha": "21b2550",
       "branch": "feat/demo-147",
       "pr_number": 247,
@@ -1053,7 +1053,7 @@
     },
     {
       "run_id": "demo0148",
-      "timestamp": "2026-06-13T15:30:00.852958Z",
+      "timestamp": "2026-06-13T15:30:00.645283Z",
       "git_sha": "2614a25",
       "branch": "feat/demo-148",
       "pr_number": 248,
@@ -1075,7 +1075,7 @@
     },
     {
       "run_id": "demo0149",
-      "timestamp": "2026-06-15T13:32:00.852958Z",
+      "timestamp": "2026-06-15T13:32:00.645283Z",
       "git_sha": "0640dbc",
       "branch": "feat/demo-149",
       "pr_number": 249,
@@ -1097,7 +1097,7 @@
     },
     {
       "run_id": "demo0150",
-      "timestamp": "2026-06-15T14:26:00.852958Z",
+      "timestamp": "2026-06-15T14:26:00.645283Z",
       "git_sha": "a6cc0a9",
       "branch": "feat/demo-150",
       "pr_number": 250,
@@ -1119,7 +1119,7 @@
     },
     {
       "run_id": "demo0153",
-      "timestamp": "2026-06-16T09:29:00.852958Z",
+      "timestamp": "2026-06-16T09:29:00.645283Z",
       "git_sha": "a834c63",
       "branch": "feat/demo-153",
       "pr_number": 253,
@@ -1141,7 +1141,7 @@
     },
     {
       "run_id": "demo0152",
-      "timestamp": "2026-06-16T12:34:00.852958Z",
+      "timestamp": "2026-06-16T12:34:00.645283Z",
       "git_sha": "92255d2",
       "branch": "feat/demo-152",
       "pr_number": 252,
@@ -1163,7 +1163,7 @@
     },
     {
       "run_id": "demo0151",
-      "timestamp": "2026-06-16T16:33:00.852958Z",
+      "timestamp": "2026-06-16T16:33:00.645283Z",
       "git_sha": "25712ad",
       "branch": "feat/demo-151",
       "pr_number": 251,
@@ -1190,7 +1190,7 @@
     },
     {
       "run_id": "demo0154",
-      "timestamp": "2026-06-17T10:51:00.852958Z",
+      "timestamp": "2026-06-17T10:51:00.645283Z",
       "git_sha": "8ef9c98",
       "branch": "feat/demo-154",
       "pr_number": 254,
@@ -1212,7 +1212,7 @@
     },
     {
       "run_id": "demo0156",
-      "timestamp": "2026-06-17T13:09:00.852958Z",
+      "timestamp": "2026-06-17T13:09:00.645283Z",
       "git_sha": "96e3cb2",
       "branch": "feat/demo-156",
       "pr_number": 256,
@@ -1234,7 +1234,7 @@
     },
     {
       "run_id": "demo0157",
-      "timestamp": "2026-06-17T13:39:00.852958Z",
+      "timestamp": "2026-06-17T13:39:00.645283Z",
       "git_sha": "f21db7b",
       "branch": "feat/demo-157",
       "pr_number": 257,
@@ -1256,7 +1256,7 @@
     },
     {
       "run_id": "demo0155",
-      "timestamp": "2026-06-17T15:12:00.852958Z",
+      "timestamp": "2026-06-17T15:12:00.645283Z",
       "git_sha": "fa63bfd",
       "branch": "feat/demo-155",
       "pr_number": 255,
@@ -1278,7 +1278,7 @@
     },
     {
       "run_id": "demo0159",
-      "timestamp": "2026-06-18T11:06:00.852958Z",
+      "timestamp": "2026-06-18T11:06:00.645283Z",
       "git_sha": "31ad6dd",
       "branch": "feat/demo-159",
       "pr_number": 259,
@@ -1300,7 +1300,7 @@
     },
     {
       "run_id": "demo0158",
-      "timestamp": "2026-06-18T17:34:00.852958Z",
+      "timestamp": "2026-06-18T17:34:00.645283Z",
       "git_sha": "b2850fb",
       "branch": "feat/demo-158",
       "pr_number": 258,
@@ -1322,7 +1322,7 @@
     },
     {
       "run_id": "demo0160",
-      "timestamp": "2026-06-19T17:15:00.852958Z",
+      "timestamp": "2026-06-19T17:15:00.645283Z",
       "git_sha": "43adef0",
       "branch": "feat/demo-160",
       "pr_number": 260,
@@ -1344,7 +1344,7 @@
     },
     {
       "run_id": "demo0161",
-      "timestamp": "2026-06-21T09:21:00.852958Z",
+      "timestamp": "2026-06-21T09:21:00.645283Z",
       "git_sha": "ea032f1",
       "branch": "feat/demo-161",
       "pr_number": 261,
@@ -1372,7 +1372,7 @@
     },
     {
       "run_id": "demo0162",
-      "timestamp": "2026-06-21T14:05:48.402992Z",
+      "timestamp": "2026-06-21T14:05:48.195317Z",
       "git_sha": "81be42c",
       "branch": "main",
       "pr_number": null,
@@ -1394,7 +1394,7 @@
     },
     {
       "run_id": "demo0165",
-      "timestamp": "2026-06-22T11:06:00.852958Z",
+      "timestamp": "2026-06-22T11:06:00.645283Z",
       "git_sha": "9d82637",
       "branch": "feat/demo-165",
       "pr_number": 265,
@@ -1416,7 +1416,7 @@
     },
     {
       "run_id": "demo0164",
-      "timestamp": "2026-06-22T12:09:00.852958Z",
+      "timestamp": "2026-06-22T12:09:00.645283Z",
       "git_sha": "9ddfd69",
       "branch": "feat/demo-164",
       "pr_number": 264,
@@ -1438,7 +1438,7 @@
     },
     {
       "run_id": "demo0166",
-      "timestamp": "2026-06-22T12:19:00.852958Z",
+      "timestamp": "2026-06-22T12:19:00.645283Z",
       "git_sha": "43593a4",
       "branch": "feat/demo-166",
       "pr_number": 266,
@@ -1460,7 +1460,7 @@
     },
     {
       "run_id": "demo0163",
-      "timestamp": "2026-06-22T16:21:00.852958Z",
+      "timestamp": "2026-06-22T16:21:00.645283Z",
       "git_sha": "e817273",
       "branch": "feat/demo-163",
       "pr_number": 263,
@@ -1482,7 +1482,7 @@
     },
     {
       "run_id": "demo0168",
-      "timestamp": "2026-06-23T09:09:00.852958Z",
+      "timestamp": "2026-06-23T09:09:00.645283Z",
       "git_sha": "a8c5c59",
       "branch": "feat/demo-168",
       "pr_number": 268,
@@ -1509,7 +1509,7 @@
     },
     {
       "run_id": "demo0167",
-      "timestamp": "2026-06-23T15:42:00.852958Z",
+      "timestamp": "2026-06-23T15:42:00.645283Z",
       "git_sha": "155cb64",
       "branch": "feat/demo-167",
       "pr_number": 267,
@@ -1531,7 +1531,7 @@
     },
     {
       "run_id": "demo0169",
-      "timestamp": "2026-06-24T09:57:00.852958Z",
+      "timestamp": "2026-06-24T09:57:00.645283Z",
       "git_sha": "99bde24",
       "branch": "feat/demo-169",
       "pr_number": 269,
@@ -1559,7 +1559,7 @@
     },
     {
       "run_id": "demo0170",
-      "timestamp": "2026-06-24T18:28:00.852958Z",
+      "timestamp": "2026-06-24T18:28:00.645283Z",
       "git_sha": "d8c1f6d",
       "branch": "feat/demo-170",
       "pr_number": 270,
@@ -1581,7 +1581,7 @@
     },
     {
       "run_id": "demo0173",
-      "timestamp": "2026-06-25T11:22:00.852958Z",
+      "timestamp": "2026-06-25T11:22:00.645283Z",
       "git_sha": "6c051ba",
       "branch": "feat/demo-173",
       "pr_number": 273,
@@ -1603,7 +1603,7 @@
     },
     {
       "run_id": "demo0172",
-      "timestamp": "2026-06-25T12:25:00.852958Z",
+      "timestamp": "2026-06-25T12:25:00.645283Z",
       "git_sha": "625c242",
       "branch": "feat/demo-172",
       "pr_number": 272,
@@ -1625,7 +1625,7 @@
     },
     {
       "run_id": "demo0171",
-      "timestamp": "2026-06-25T15:04:00.852958Z",
+      "timestamp": "2026-06-25T15:04:00.645283Z",
       "git_sha": "029ee80",
       "branch": "feat/demo-171",
       "pr_number": 271,
@@ -1647,7 +1647,7 @@
     },
     {
       "run_id": "demo0176",
-      "timestamp": "2026-06-29T12:03:00.852958Z",
+      "timestamp": "2026-06-29T12:03:00.645283Z",
       "git_sha": "d2b27f7",
       "branch": "feat/demo-176",
       "pr_number": 276,
@@ -1669,7 +1669,7 @@
     },
     {
       "run_id": "demo0174",
-      "timestamp": "2026-06-29T18:34:00.852958Z",
+      "timestamp": "2026-06-29T18:34:00.645283Z",
       "git_sha": "4e6f2eb",
       "branch": "feat/demo-174",
       "pr_number": 274,
@@ -1697,7 +1697,7 @@
     },
     {
       "run_id": "demo0175",
-      "timestamp": "2026-06-29T22:21:18.572452Z",
+      "timestamp": "2026-06-29T22:21:18.364777Z",
       "git_sha": "98fc287",
       "branch": "main",
       "pr_number": null,
@@ -1719,7 +1719,7 @@
     },
     {
       "run_id": "demo0180",
-      "timestamp": "2026-06-30T11:00:00.852958Z",
+      "timestamp": "2026-06-30T11:00:00.645283Z",
       "git_sha": "1107cf7",
       "branch": "feat/demo-180",
       "pr_number": 280,
@@ -1746,7 +1746,7 @@
     },
     {
       "run_id": "demo0181",
-      "timestamp": "2026-06-30T15:24:55.714167Z",
+      "timestamp": "2026-06-30T15:24:55.506492Z",
       "git_sha": "4c90e2d",
       "branch": "main",
       "pr_number": null,
@@ -1768,7 +1768,7 @@
     },
     {
       "run_id": "demo0179",
-      "timestamp": "2026-06-30T15:42:00.852958Z",
+      "timestamp": "2026-06-30T15:42:00.645283Z",
       "git_sha": "248726b",
       "branch": "feat/demo-179",
       "pr_number": 279,
@@ -1790,7 +1790,7 @@
     },
     {
       "run_id": "demo0177",
-      "timestamp": "2026-06-30T16:59:00.852958Z",
+      "timestamp": "2026-06-30T16:59:00.645283Z",
       "git_sha": "1fdbc46",
       "branch": "feat/demo-177",
       "pr_number": 277,
@@ -1817,7 +1817,7 @@
     },
     {
       "run_id": "demo0178",
-      "timestamp": "2026-06-30T22:39:00.250246Z",
+      "timestamp": "2026-06-30T22:39:00.042571Z",
       "git_sha": "f6be4e4",
       "branch": "main",
       "pr_number": null,
@@ -1839,7 +1839,7 @@
     },
     {
       "run_id": "demo0182",
-      "timestamp": "2026-07-01T10:47:00.852958Z",
+      "timestamp": "2026-07-01T10:47:00.645283Z",
       "git_sha": "f64bf64",
       "branch": "feat/demo-182",
       "pr_number": 282,
@@ -1861,7 +1861,7 @@
     },
     {
       "run_id": "demo0185",
-      "timestamp": "2026-07-01T11:47:00.852958Z",
+      "timestamp": "2026-07-01T11:47:00.645283Z",
       "git_sha": "1f59df3",
       "branch": "feat/demo-185",
       "pr_number": 285,
@@ -1883,7 +1883,7 @@
     },
     {
       "run_id": "demo0183",
-      "timestamp": "2026-07-01T13:52:00.852958Z",
+      "timestamp": "2026-07-01T13:52:00.645283Z",
       "git_sha": "e79f05b",
       "branch": "feat/demo-183",
       "pr_number": 283,
@@ -1910,7 +1910,7 @@
     },
     {
       "run_id": "demo0186",
-      "timestamp": "2026-07-01T15:20:00.852958Z",
+      "timestamp": "2026-07-01T15:20:00.645283Z",
       "git_sha": "57b1fc0",
       "branch": "feat/demo-186",
       "pr_number": 286,
@@ -1938,7 +1938,7 @@
     },
     {
       "run_id": "demo0184",
-      "timestamp": "2026-07-01T16:57:55.532030Z",
+      "timestamp": "2026-07-01T16:57:55.324355Z",
       "git_sha": "d96924b",
       "branch": "main",
       "pr_number": null,
@@ -1960,7 +1960,7 @@
     },
     {
       "run_id": "demo0187",
-      "timestamp": "2026-07-02T10:11:00.852958Z",
+      "timestamp": "2026-07-02T10:11:00.645283Z",
       "git_sha": "2b48e10",
       "branch": "feat/demo-187",
       "pr_number": 287,
@@ -1988,7 +1988,7 @@
     },
     {
       "run_id": "demo0188",
-      "timestamp": "2026-07-02T13:21:00.852958Z",
+      "timestamp": "2026-07-02T13:21:00.645283Z",
       "git_sha": "8da1ecf",
       "branch": "feat/demo-188",
       "pr_number": 288,
@@ -2015,30 +2015,8 @@
       "duration_seconds": 68.9
     },
     {
-      "run_id": "demo0191",
-      "timestamp": "2026-07-03T09:21:41.852958Z",
-      "git_sha": "a92ff7d",
-      "branch": "main",
-      "pr_number": null,
-      "event_type": "merge",
-      "posture_score_before": 58.7,
-      "posture_score_after": 88.0,
-      "score_delta": 29.3,
-      "regressions_introduced": 0,
-      "regressions_by_severity": {},
-      "benchmarks_violated": [],
-      "auto_fix_pr_opened": false,
-      "auto_fix_pr_url": null,
-      "scanner_findings": {
-        "checkov": 2,
-        "tfsec": 1,
-        "trivy": 3
-      },
-      "duration_seconds": 44.6
-    },
-    {
       "run_id": "demo0190",
-      "timestamp": "2026-07-03T15:53:00.852958Z",
+      "timestamp": "2026-07-03T15:53:00.645283Z",
       "git_sha": "646c595",
       "branch": "feat/demo-190",
       "pr_number": 290,
@@ -2060,7 +2038,7 @@
     },
     {
       "run_id": "demo0189",
-      "timestamp": "2026-07-03T17:12:00.852958Z",
+      "timestamp": "2026-07-03T17:12:00.645283Z",
       "git_sha": "0c056c0",
       "branch": "feat/demo-189",
       "pr_number": 289,
@@ -2079,6 +2057,28 @@
         "trivy": 2
       },
       "duration_seconds": 86.2
+    },
+    {
+      "run_id": "demo0191",
+      "timestamp": "2026-07-04T08:40:16.645283Z",
+      "git_sha": "3a42856",
+      "branch": "main",
+      "pr_number": null,
+      "event_type": "merge",
+      "posture_score_before": 58.7,
+      "posture_score_after": 88.0,
+      "score_delta": 29.3,
+      "regressions_introduced": 0,
+      "regressions_by_severity": {},
+      "benchmarks_violated": [],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 2,
+        "tfsec": 1,
+        "trivy": 3
+      },
+      "duration_seconds": 46.0
     }
   ],
   "current_posture_score": 88.0,
@@ -2484,13 +2484,6 @@
     },
     {
       "date": "2026-07-03",
-      "score": 88.0,
-      "pr_number": null,
-      "delta": 29.3,
-      "is_regression": false
-    },
-    {
-      "date": "2026-07-03",
       "score": 58.7,
       "pr_number": 290,
       "delta": 0.3,
@@ -2501,6 +2494,13 @@
       "score": 58.4,
       "pr_number": 289,
       "delta": 0.4,
+      "is_regression": false
+    },
+    {
+      "date": "2026-07-04",
+      "score": 88.0,
+      "pr_number": null,
+      "delta": 29.3,
       "is_regression": false
     }
   ],
@@ -2695,7 +2695,7 @@
   ],
   "total_regressions_30d": 14,
   "total_auto_fixes_30d": 7,
-  "mean_time_to_remediate_hours": 6.5,
+  "mean_time_to_remediate_hours": 6.8,
   "controls_tested": 18,
   "controls_total": 18
 }
