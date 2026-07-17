@@ -1,57 +1,13 @@
 {
-  "last_updated": "2026-07-16T08:17:06.808492Z",
+  "last_updated": "2026-07-17T08:12:43.341702Z",
   "_demo": true,
   "runs": [
     {
-      "run_id": "demo0102",
-      "timestamp": "2026-06-03T09:13:00.805371Z",
-      "git_sha": "3827d74",
-      "branch": "feat/demo-102",
-      "pr_number": 202,
-      "event_type": "pr",
-      "posture_score_before": 88.3,
-      "posture_score_after": 88.5,
-      "score_delta": 0.2,
-      "regressions_introduced": 0,
-      "regressions_by_severity": {},
-      "benchmarks_violated": [],
-      "auto_fix_pr_opened": false,
-      "auto_fix_pr_url": null,
-      "scanner_findings": {
-        "checkov": 3,
-        "tfsec": 1,
-        "trivy": 5
-      },
-      "duration_seconds": 43.9
-    },
-    {
       "run_id": "demo0100",
-      "timestamp": "2026-06-03T09:52:00.805371Z",
-      "git_sha": "8b7d6e2",
+      "timestamp": "2026-06-03T11:31:00.338660Z",
+      "git_sha": "63650c4",
       "branch": "feat/demo-100",
       "pr_number": 200,
-      "event_type": "pr",
-      "posture_score_before": 87.5,
-      "posture_score_after": 88.0,
-      "score_delta": 0.5,
-      "regressions_introduced": 0,
-      "regressions_by_severity": {},
-      "benchmarks_violated": [],
-      "auto_fix_pr_opened": false,
-      "auto_fix_pr_url": null,
-      "scanner_findings": {
-        "checkov": 4,
-        "tfsec": 2,
-        "trivy": 5
-      },
-      "duration_seconds": 58.4
-    },
-    {
-      "run_id": "demo0099",
-      "timestamp": "2026-06-03T11:31:00.805371Z",
-      "git_sha": "63650c4",
-      "branch": "feat/demo-99",
-      "pr_number": 199,
       "event_type": "pr",
       "posture_score_before": 86.9,
       "posture_score_after": 87.5,
@@ -69,11 +25,11 @@
       "duration_seconds": 84.9
     },
     {
-      "run_id": "demo0101",
-      "timestamp": "2026-06-03T13:26:00.805371Z",
+      "run_id": "demo0102",
+      "timestamp": "2026-06-03T13:26:00.338660Z",
       "git_sha": "c476f74",
-      "branch": "feat/demo-101",
-      "pr_number": 201,
+      "branch": "feat/demo-102",
+      "pr_number": 202,
       "event_type": "pr",
       "posture_score_before": 88.0,
       "posture_score_after": 88.3,
@@ -91,11 +47,11 @@
       "duration_seconds": 64.8
     },
     {
-      "run_id": "demo0103",
-      "timestamp": "2026-06-04T18:47:00.805371Z",
+      "run_id": "demo0104",
+      "timestamp": "2026-06-04T18:47:00.338660Z",
       "git_sha": "09babac",
-      "branch": "feat/demo-103",
-      "pr_number": 203,
+      "branch": "feat/demo-104",
+      "pr_number": 204,
       "event_type": "pr",
       "posture_score_before": 88.5,
       "posture_score_after": 89.0,
@@ -113,11 +69,11 @@
       "duration_seconds": 91.9
     },
     {
-      "run_id": "demo0104",
-      "timestamp": "2026-06-05T11:32:00.805371Z",
+      "run_id": "demo0105",
+      "timestamp": "2026-06-05T11:32:00.338660Z",
       "git_sha": "f4c228e",
-      "branch": "feat/demo-104",
-      "pr_number": 204,
+      "branch": "feat/demo-105",
+      "pr_number": 205,
       "event_type": "pr",
       "posture_score_before": 89.0,
       "posture_score_after": 79.0,
@@ -132,7 +88,7 @@
         "NIST SC-7"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/304",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/305",
       "scanner_findings": {
         "checkov": 8,
         "tfsec": 5,
@@ -141,8 +97,8 @@
       "duration_seconds": 126.4
     },
     {
-      "run_id": "demo0105",
-      "timestamp": "2026-06-05T17:29:23.949094Z",
+      "run_id": "demo0106",
+      "timestamp": "2026-06-05T17:29:23.482383Z",
       "git_sha": "45467f5",
       "branch": "main",
       "pr_number": null,
@@ -163,11 +119,11 @@
       "duration_seconds": 88.4
     },
     {
-      "run_id": "demo0107",
-      "timestamp": "2026-06-08T11:10:00.805371Z",
+      "run_id": "demo0108",
+      "timestamp": "2026-06-08T11:10:00.338660Z",
       "git_sha": "6612a93",
-      "branch": "feat/demo-107",
-      "pr_number": 207,
+      "branch": "feat/demo-108",
+      "pr_number": 208,
       "event_type": "pr",
       "posture_score_before": 90.4,
       "posture_score_after": 80.4,
@@ -182,7 +138,7 @@
         "NIST SC-7"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/307",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/308",
       "scanner_findings": {
         "checkov": 5,
         "tfsec": 2,
@@ -191,11 +147,11 @@
       "duration_seconds": 78.1
     },
     {
-      "run_id": "demo0106",
-      "timestamp": "2026-06-08T12:40:00.805371Z",
+      "run_id": "demo0107",
+      "timestamp": "2026-06-08T12:40:00.338660Z",
       "git_sha": "fa1db5d",
-      "branch": "feat/demo-106",
-      "pr_number": 206,
+      "branch": "feat/demo-107",
+      "pr_number": 207,
       "event_type": "pr",
       "posture_score_before": 90.0,
       "posture_score_after": 90.4,
@@ -213,11 +169,11 @@
       "duration_seconds": 65.6
     },
     {
-      "run_id": "demo0110",
-      "timestamp": "2026-06-08T13:30:00.805371Z",
+      "run_id": "demo0111",
+      "timestamp": "2026-06-08T13:30:00.338660Z",
       "git_sha": "35b7b6e",
-      "branch": "feat/demo-110",
-      "pr_number": 210,
+      "branch": "feat/demo-111",
+      "pr_number": 211,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -235,8 +191,8 @@
       "duration_seconds": 57.6
     },
     {
-      "run_id": "demo0108",
-      "timestamp": "2026-06-08T14:40:24.514491Z",
+      "run_id": "demo0109",
+      "timestamp": "2026-06-08T14:40:24.047780Z",
       "git_sha": "02b042c",
       "branch": "main",
       "pr_number": null,
@@ -257,11 +213,11 @@
       "duration_seconds": 59.9
     },
     {
-      "run_id": "demo0109",
-      "timestamp": "2026-06-08T17:33:00.805371Z",
+      "run_id": "demo0110",
+      "timestamp": "2026-06-08T17:33:00.338660Z",
       "git_sha": "adc8be6",
-      "branch": "feat/demo-109",
-      "pr_number": 209,
+      "branch": "feat/demo-110",
+      "pr_number": 210,
       "event_type": "pr",
       "posture_score_before": 91.4,
       "posture_score_after": 92.0,
@@ -279,11 +235,11 @@
       "duration_seconds": 73.9
     },
     {
-      "run_id": "demo0113",
-      "timestamp": "2026-06-09T12:53:00.805371Z",
+      "run_id": "demo0114",
+      "timestamp": "2026-06-09T12:53:00.338660Z",
       "git_sha": "6f22827",
-      "branch": "feat/demo-113",
-      "pr_number": 213,
+      "branch": "feat/demo-114",
+      "pr_number": 214,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -301,11 +257,11 @@
       "duration_seconds": 66.4
     },
     {
-      "run_id": "demo0111",
-      "timestamp": "2026-06-09T13:54:00.805371Z",
+      "run_id": "demo0112",
+      "timestamp": "2026-06-09T13:54:00.338660Z",
       "git_sha": "5abe612",
-      "branch": "feat/demo-111",
-      "pr_number": 211,
+      "branch": "feat/demo-112",
+      "pr_number": 212,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -323,11 +279,11 @@
       "duration_seconds": 63.9
     },
     {
-      "run_id": "demo0112",
-      "timestamp": "2026-06-09T16:15:00.805371Z",
+      "run_id": "demo0113",
+      "timestamp": "2026-06-09T16:15:00.338660Z",
       "git_sha": "ae73acc",
-      "branch": "feat/demo-112",
-      "pr_number": 212,
+      "branch": "feat/demo-113",
+      "pr_number": 213,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -345,11 +301,11 @@
       "duration_seconds": 93.2
     },
     {
-      "run_id": "demo0114",
-      "timestamp": "2026-06-10T14:23:00.805371Z",
+      "run_id": "demo0115",
+      "timestamp": "2026-06-10T14:23:00.338660Z",
       "git_sha": "28d10e4",
-      "branch": "feat/demo-114",
-      "pr_number": 214,
+      "branch": "feat/demo-115",
+      "pr_number": 215,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 87.0,
@@ -372,11 +328,11 @@
       "duration_seconds": 129.0
     },
     {
-      "run_id": "demo0116",
-      "timestamp": "2026-06-10T17:43:00.805371Z",
+      "run_id": "demo0117",
+      "timestamp": "2026-06-10T17:43:00.338660Z",
       "git_sha": "65d7bba",
-      "branch": "feat/demo-116",
-      "pr_number": 216,
+      "branch": "feat/demo-117",
+      "pr_number": 217,
       "event_type": "pr",
       "posture_score_before": 87.2,
       "posture_score_after": 87.3,
@@ -394,11 +350,11 @@
       "duration_seconds": 40.6
     },
     {
-      "run_id": "demo0115",
-      "timestamp": "2026-06-10T18:21:00.805371Z",
+      "run_id": "demo0116",
+      "timestamp": "2026-06-10T18:21:00.338660Z",
       "git_sha": "7efda37",
-      "branch": "feat/demo-115",
-      "pr_number": 215,
+      "branch": "feat/demo-116",
+      "pr_number": 216,
       "event_type": "pr",
       "posture_score_before": 87.0,
       "posture_score_after": 87.2,
@@ -416,11 +372,11 @@
       "duration_seconds": 57.2
     },
     {
-      "run_id": "demo0117",
-      "timestamp": "2026-06-11T14:13:00.805371Z",
+      "run_id": "demo0118",
+      "timestamp": "2026-06-11T14:13:00.338660Z",
       "git_sha": "03bc319",
-      "branch": "feat/demo-117",
-      "pr_number": 217,
+      "branch": "feat/demo-118",
+      "pr_number": 218,
       "event_type": "pr",
       "posture_score_before": 87.3,
       "posture_score_after": 87.9,
@@ -438,11 +394,11 @@
       "duration_seconds": 95.5
     },
     {
-      "run_id": "demo0120",
-      "timestamp": "2026-06-15T10:32:00.805371Z",
+      "run_id": "demo0121",
+      "timestamp": "2026-06-15T10:32:00.338660Z",
       "git_sha": "8a051e9",
-      "branch": "feat/demo-120",
-      "pr_number": 220,
+      "branch": "feat/demo-121",
+      "pr_number": 221,
       "event_type": "pr",
       "posture_score_before": 88.8,
       "posture_score_after": 89.1,
@@ -460,11 +416,11 @@
       "duration_seconds": 57.8
     },
     {
-      "run_id": "demo0118",
-      "timestamp": "2026-06-15T11:31:00.805371Z",
+      "run_id": "demo0119",
+      "timestamp": "2026-06-15T11:31:00.338660Z",
       "git_sha": "864ab1e",
-      "branch": "feat/demo-118",
-      "pr_number": 218,
+      "branch": "feat/demo-119",
+      "pr_number": 219,
       "event_type": "pr",
       "posture_score_before": 87.9,
       "posture_score_after": 88.2,
@@ -482,11 +438,11 @@
       "duration_seconds": 85.2
     },
     {
-      "run_id": "demo0119",
-      "timestamp": "2026-06-15T13:31:00.805371Z",
+      "run_id": "demo0120",
+      "timestamp": "2026-06-15T13:31:00.338660Z",
       "git_sha": "d260e5c",
-      "branch": "feat/demo-119",
-      "pr_number": 219,
+      "branch": "feat/demo-120",
+      "pr_number": 220,
       "event_type": "pr",
       "posture_score_before": 88.2,
       "posture_score_after": 88.8,
@@ -504,11 +460,11 @@
       "duration_seconds": 78.9
     },
     {
-      "run_id": "demo0123",
-      "timestamp": "2026-06-16T09:39:00.805371Z",
+      "run_id": "demo0124",
+      "timestamp": "2026-06-16T09:39:00.338660Z",
       "git_sha": "baa0158",
-      "branch": "feat/demo-123",
-      "pr_number": 223,
+      "branch": "feat/demo-124",
+      "pr_number": 224,
       "event_type": "pr",
       "posture_score_before": 89.4,
       "posture_score_after": 89.7,
@@ -526,11 +482,11 @@
       "duration_seconds": 79.8
     },
     {
-      "run_id": "demo0124",
-      "timestamp": "2026-06-16T12:49:00.805371Z",
+      "run_id": "demo0125",
+      "timestamp": "2026-06-16T12:49:00.338660Z",
       "git_sha": "d2e9acf",
-      "branch": "feat/demo-124",
-      "pr_number": 224,
+      "branch": "feat/demo-125",
+      "pr_number": 225,
       "event_type": "pr",
       "posture_score_before": 89.7,
       "posture_score_after": 90.4,
@@ -548,11 +504,11 @@
       "duration_seconds": 51.3
     },
     {
-      "run_id": "demo0121",
-      "timestamp": "2026-06-16T16:54:00.805371Z",
+      "run_id": "demo0122",
+      "timestamp": "2026-06-16T16:54:00.338660Z",
       "git_sha": "eb9915b",
-      "branch": "feat/demo-121",
-      "pr_number": 221,
+      "branch": "feat/demo-122",
+      "pr_number": 222,
       "event_type": "pr",
       "posture_score_before": 89.1,
       "posture_score_after": 86.1,
@@ -566,7 +522,7 @@
         "NIST AU-2"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/321",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/322",
       "scanner_findings": {
         "checkov": 3,
         "tfsec": 6,
@@ -575,8 +531,8 @@
       "duration_seconds": 114.5
     },
     {
-      "run_id": "demo0122",
-      "timestamp": "2026-06-16T21:36:10.777529Z",
+      "run_id": "demo0123",
+      "timestamp": "2026-06-16T21:36:10.310818Z",
       "git_sha": "3f8814d",
       "branch": "main",
       "pr_number": null,
@@ -597,11 +553,11 @@
       "duration_seconds": 61.2
     },
     {
-      "run_id": "demo0125",
-      "timestamp": "2026-06-17T09:16:00.805371Z",
+      "run_id": "demo0126",
+      "timestamp": "2026-06-17T09:16:00.338660Z",
       "git_sha": "9dba339",
-      "branch": "feat/demo-125",
-      "pr_number": 225,
+      "branch": "feat/demo-126",
+      "pr_number": 226,
       "event_type": "pr",
       "posture_score_before": 90.4,
       "posture_score_after": 90.5,
@@ -619,11 +575,11 @@
       "duration_seconds": 90.4
     },
     {
-      "run_id": "demo0126",
-      "timestamp": "2026-06-17T14:59:00.805371Z",
+      "run_id": "demo0127",
+      "timestamp": "2026-06-17T14:59:00.338660Z",
       "git_sha": "b9f2fe7",
-      "branch": "feat/demo-126",
-      "pr_number": 226,
+      "branch": "feat/demo-127",
+      "pr_number": 227,
       "event_type": "pr",
       "posture_score_before": 90.5,
       "posture_score_after": 91.2,
@@ -641,11 +597,11 @@
       "duration_seconds": 75.2
     },
     {
-      "run_id": "demo0127",
-      "timestamp": "2026-06-17T16:22:00.805371Z",
+      "run_id": "demo0128",
+      "timestamp": "2026-06-17T16:22:00.338660Z",
       "git_sha": "715fac7",
-      "branch": "feat/demo-127",
-      "pr_number": 227,
+      "branch": "feat/demo-128",
+      "pr_number": 228,
       "event_type": "pr",
       "posture_score_before": 91.2,
       "posture_score_after": 91.8,
@@ -663,11 +619,11 @@
       "duration_seconds": 98.3
     },
     {
-      "run_id": "demo0128",
-      "timestamp": "2026-06-18T10:52:00.805371Z",
+      "run_id": "demo0129",
+      "timestamp": "2026-06-18T10:52:00.338660Z",
       "git_sha": "6f213e6",
-      "branch": "feat/demo-128",
-      "pr_number": 228,
+      "branch": "feat/demo-129",
+      "pr_number": 229,
       "event_type": "pr",
       "posture_score_before": 91.8,
       "posture_score_after": 91.9,
@@ -685,11 +641,11 @@
       "duration_seconds": 40.2
     },
     {
-      "run_id": "demo0129",
-      "timestamp": "2026-06-19T15:56:00.805371Z",
+      "run_id": "demo0130",
+      "timestamp": "2026-06-19T15:56:00.338660Z",
       "git_sha": "2c4578b",
-      "branch": "feat/demo-129",
-      "pr_number": 229,
+      "branch": "feat/demo-130",
+      "pr_number": 230,
       "event_type": "pr",
       "posture_score_before": 91.9,
       "posture_score_after": 92.0,
@@ -707,11 +663,11 @@
       "duration_seconds": 62.7
     },
     {
-      "run_id": "demo0130",
-      "timestamp": "2026-06-19T16:59:00.805371Z",
+      "run_id": "demo0131",
+      "timestamp": "2026-06-19T16:59:00.338660Z",
       "git_sha": "09b3718",
-      "branch": "feat/demo-130",
-      "pr_number": 230,
+      "branch": "feat/demo-131",
+      "pr_number": 231,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -729,11 +685,11 @@
       "duration_seconds": 84.1
     },
     {
-      "run_id": "demo0134",
-      "timestamp": "2026-06-22T11:22:00.805371Z",
+      "run_id": "demo0135",
+      "timestamp": "2026-06-22T11:22:00.338660Z",
       "git_sha": "5649707",
-      "branch": "feat/demo-134",
-      "pr_number": 234,
+      "branch": "feat/demo-135",
+      "pr_number": 235,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -751,11 +707,11 @@
       "duration_seconds": 99.9
     },
     {
-      "run_id": "demo0131",
-      "timestamp": "2026-06-22T13:26:00.805371Z",
+      "run_id": "demo0132",
+      "timestamp": "2026-06-22T13:26:00.338660Z",
       "git_sha": "44d2abe",
-      "branch": "feat/demo-131",
-      "pr_number": 231,
+      "branch": "feat/demo-132",
+      "pr_number": 232,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 87.0,
@@ -769,7 +725,7 @@
         "NIST SC-28"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/331",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/332",
       "scanner_findings": {
         "checkov": 6,
         "tfsec": 3,
@@ -778,11 +734,11 @@
       "duration_seconds": 135.9
     },
     {
-      "run_id": "demo0133",
-      "timestamp": "2026-06-22T14:41:00.805371Z",
+      "run_id": "demo0134",
+      "timestamp": "2026-06-22T14:41:00.338660Z",
       "git_sha": "43fbe5c",
-      "branch": "feat/demo-133",
-      "pr_number": 233,
+      "branch": "feat/demo-134",
+      "pr_number": 234,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -800,8 +756,8 @@
       "duration_seconds": 71.3
     },
     {
-      "run_id": "demo0132",
-      "timestamp": "2026-06-22T16:25:50.026577Z",
+      "run_id": "demo0133",
+      "timestamp": "2026-06-22T16:25:49.559866Z",
       "git_sha": "e5c45e2",
       "branch": "main",
       "pr_number": null,
@@ -822,11 +778,11 @@
       "duration_seconds": 51.8
     },
     {
-      "run_id": "demo0136",
-      "timestamp": "2026-06-23T13:11:00.805371Z",
+      "run_id": "demo0137",
+      "timestamp": "2026-06-23T13:11:00.338660Z",
       "git_sha": "6a03cc9",
-      "branch": "feat/demo-136",
-      "pr_number": 236,
+      "branch": "feat/demo-137",
+      "pr_number": 237,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -844,11 +800,11 @@
       "duration_seconds": 96.3
     },
     {
-      "run_id": "demo0135",
-      "timestamp": "2026-06-23T14:14:00.805371Z",
+      "run_id": "demo0136",
+      "timestamp": "2026-06-23T14:14:00.338660Z",
       "git_sha": "e4abfa4",
-      "branch": "feat/demo-135",
-      "pr_number": 235,
+      "branch": "feat/demo-136",
+      "pr_number": 236,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -866,11 +822,11 @@
       "duration_seconds": 97.7
     },
     {
-      "run_id": "demo0137",
-      "timestamp": "2026-06-23T14:28:00.805371Z",
+      "run_id": "demo0138",
+      "timestamp": "2026-06-23T14:28:00.338660Z",
       "git_sha": "1980002",
-      "branch": "feat/demo-137",
-      "pr_number": 237,
+      "branch": "feat/demo-138",
+      "pr_number": 238,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -888,11 +844,11 @@
       "duration_seconds": 88.4
     },
     {
-      "run_id": "demo0142",
-      "timestamp": "2026-06-24T11:23:00.805371Z",
+      "run_id": "demo0143",
+      "timestamp": "2026-06-24T11:23:00.338660Z",
       "git_sha": "c420cac",
-      "branch": "feat/demo-142",
-      "pr_number": 242,
+      "branch": "feat/demo-143",
+      "pr_number": 243,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -910,11 +866,11 @@
       "duration_seconds": 54.4
     },
     {
-      "run_id": "demo0138",
-      "timestamp": "2026-06-24T14:51:00.805371Z",
+      "run_id": "demo0139",
+      "timestamp": "2026-06-24T14:51:00.338660Z",
       "git_sha": "7f4d75a",
-      "branch": "feat/demo-138",
-      "pr_number": 238,
+      "branch": "feat/demo-139",
+      "pr_number": 239,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -932,11 +888,11 @@
       "duration_seconds": 42.9
     },
     {
-      "run_id": "demo0141",
-      "timestamp": "2026-06-24T17:36:00.805371Z",
+      "run_id": "demo0142",
+      "timestamp": "2026-06-24T17:36:00.338660Z",
       "git_sha": "fbf7780",
-      "branch": "feat/demo-141",
-      "pr_number": 241,
+      "branch": "feat/demo-142",
+      "pr_number": 242,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -954,11 +910,11 @@
       "duration_seconds": 58.9
     },
     {
-      "run_id": "demo0139",
-      "timestamp": "2026-06-24T18:03:00.805371Z",
+      "run_id": "demo0140",
+      "timestamp": "2026-06-24T18:03:00.338660Z",
       "git_sha": "405e2f8",
-      "branch": "feat/demo-139",
-      "pr_number": 239,
+      "branch": "feat/demo-140",
+      "pr_number": 240,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 87.0,
@@ -972,7 +928,7 @@
         "NIST AC-6"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/339",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/340",
       "scanner_findings": {
         "checkov": 8,
         "tfsec": 5,
@@ -981,8 +937,8 @@
       "duration_seconds": 137.0
     },
     {
-      "run_id": "demo0140",
-      "timestamp": "2026-06-24T21:19:53.974472Z",
+      "run_id": "demo0141",
+      "timestamp": "2026-06-24T21:19:53.507761Z",
       "git_sha": "8e6f295",
       "branch": "main",
       "pr_number": null,
@@ -1003,11 +959,11 @@
       "duration_seconds": 62.7
     },
     {
-      "run_id": "demo0145",
-      "timestamp": "2026-06-25T10:16:00.805371Z",
+      "run_id": "demo0146",
+      "timestamp": "2026-06-25T10:16:00.338660Z",
       "git_sha": "ca56406",
-      "branch": "feat/demo-145",
-      "pr_number": 245,
+      "branch": "feat/demo-146",
+      "pr_number": 246,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 82.0,
@@ -1030,11 +986,11 @@
       "duration_seconds": 61.9
     },
     {
-      "run_id": "demo0144",
-      "timestamp": "2026-06-25T10:31:00.805371Z",
+      "run_id": "demo0145",
+      "timestamp": "2026-06-25T10:31:00.338660Z",
       "git_sha": "bab7531",
-      "branch": "feat/demo-144",
-      "pr_number": 244,
+      "branch": "feat/demo-145",
+      "pr_number": 245,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -1052,11 +1008,11 @@
       "duration_seconds": 70.1
     },
     {
-      "run_id": "demo0143",
-      "timestamp": "2026-06-25T14:34:00.805371Z",
+      "run_id": "demo0144",
+      "timestamp": "2026-06-25T14:34:00.338660Z",
       "git_sha": "b8da54f",
-      "branch": "feat/demo-143",
-      "pr_number": 243,
+      "branch": "feat/demo-144",
+      "pr_number": 244,
       "event_type": "pr",
       "posture_score_before": 92.0,
       "posture_score_after": 92.0,
@@ -1074,11 +1030,11 @@
       "duration_seconds": 81.0
     },
     {
-      "run_id": "demo0146",
-      "timestamp": "2026-06-26T18:58:00.805371Z",
+      "run_id": "demo0147",
+      "timestamp": "2026-06-26T18:58:00.338660Z",
       "git_sha": "21b2550",
-      "branch": "feat/demo-146",
-      "pr_number": 246,
+      "branch": "feat/demo-147",
+      "pr_number": 247,
       "event_type": "pr",
       "posture_score_before": 82.0,
       "posture_score_after": 82.7,
@@ -1096,11 +1052,11 @@
       "duration_seconds": 54.0
     },
     {
-      "run_id": "demo0147",
-      "timestamp": "2026-06-27T15:30:00.805371Z",
+      "run_id": "demo0148",
+      "timestamp": "2026-06-27T15:30:00.338660Z",
       "git_sha": "2614a25",
-      "branch": "feat/demo-147",
-      "pr_number": 247,
+      "branch": "feat/demo-148",
+      "pr_number": 248,
       "event_type": "pr",
       "posture_score_before": 82.7,
       "posture_score_after": 82.9,
@@ -1118,11 +1074,11 @@
       "duration_seconds": 43.3
     },
     {
-      "run_id": "demo0148",
-      "timestamp": "2026-06-29T13:32:00.805371Z",
+      "run_id": "demo0149",
+      "timestamp": "2026-06-29T13:32:00.338660Z",
       "git_sha": "0640dbc",
-      "branch": "feat/demo-148",
-      "pr_number": 248,
+      "branch": "feat/demo-149",
+      "pr_number": 249,
       "event_type": "pr",
       "posture_score_before": 82.9,
       "posture_score_after": 83.4,
@@ -1140,11 +1096,11 @@
       "duration_seconds": 86.7
     },
     {
-      "run_id": "demo0149",
-      "timestamp": "2026-06-29T14:26:00.805371Z",
+      "run_id": "demo0150",
+      "timestamp": "2026-06-29T14:26:00.338660Z",
       "git_sha": "a6cc0a9",
-      "branch": "feat/demo-149",
-      "pr_number": 249,
+      "branch": "feat/demo-150",
+      "pr_number": 250,
       "event_type": "pr",
       "posture_score_before": 83.4,
       "posture_score_after": 83.5,
@@ -1162,11 +1118,11 @@
       "duration_seconds": 89.0
     },
     {
-      "run_id": "demo0152",
-      "timestamp": "2026-06-30T09:29:00.805371Z",
+      "run_id": "demo0153",
+      "timestamp": "2026-06-30T09:29:00.338660Z",
       "git_sha": "a834c63",
-      "branch": "feat/demo-152",
-      "pr_number": 252,
+      "branch": "feat/demo-153",
+      "pr_number": 253,
       "event_type": "pr",
       "posture_score_before": 82.7,
       "posture_score_after": 82.8,
@@ -1184,11 +1140,11 @@
       "duration_seconds": 66.6
     },
     {
-      "run_id": "demo0151",
-      "timestamp": "2026-06-30T12:34:00.805371Z",
+      "run_id": "demo0152",
+      "timestamp": "2026-06-30T12:34:00.338660Z",
       "git_sha": "92255d2",
-      "branch": "feat/demo-151",
-      "pr_number": 251,
+      "branch": "feat/demo-152",
+      "pr_number": 252,
       "event_type": "pr",
       "posture_score_before": 82.0,
       "posture_score_after": 82.7,
@@ -1206,11 +1162,11 @@
       "duration_seconds": 47.3
     },
     {
-      "run_id": "demo0150",
-      "timestamp": "2026-06-30T16:33:00.805371Z",
+      "run_id": "demo0151",
+      "timestamp": "2026-06-30T16:33:00.338660Z",
       "git_sha": "25712ad",
-      "branch": "feat/demo-150",
-      "pr_number": 250,
+      "branch": "feat/demo-151",
+      "pr_number": 251,
       "event_type": "pr",
       "posture_score_before": 83.5,
       "posture_score_after": 82.0,
@@ -1233,11 +1189,11 @@
       "duration_seconds": 124.1
     },
     {
-      "run_id": "demo0153",
-      "timestamp": "2026-07-01T10:51:00.805371Z",
+      "run_id": "demo0154",
+      "timestamp": "2026-07-01T10:51:00.338660Z",
       "git_sha": "8ef9c98",
-      "branch": "feat/demo-153",
-      "pr_number": 253,
+      "branch": "feat/demo-154",
+      "pr_number": 254,
       "event_type": "pr",
       "posture_score_before": 82.8,
       "posture_score_after": 83.3,
@@ -1255,11 +1211,11 @@
       "duration_seconds": 52.1
     },
     {
-      "run_id": "demo0155",
-      "timestamp": "2026-07-01T13:09:00.805371Z",
+      "run_id": "demo0156",
+      "timestamp": "2026-07-01T13:09:00.338660Z",
       "git_sha": "96e3cb2",
-      "branch": "feat/demo-155",
-      "pr_number": 255,
+      "branch": "feat/demo-156",
+      "pr_number": 256,
       "event_type": "pr",
       "posture_score_before": 83.6,
       "posture_score_after": 84.0,
@@ -1277,11 +1233,11 @@
       "duration_seconds": 67.8
     },
     {
-      "run_id": "demo0156",
-      "timestamp": "2026-07-01T13:39:00.805371Z",
+      "run_id": "demo0157",
+      "timestamp": "2026-07-01T13:39:00.338660Z",
       "git_sha": "f21db7b",
-      "branch": "feat/demo-156",
-      "pr_number": 256,
+      "branch": "feat/demo-157",
+      "pr_number": 257,
       "event_type": "pr",
       "posture_score_before": 84.0,
       "posture_score_after": 84.4,
@@ -1299,11 +1255,11 @@
       "duration_seconds": 54.2
     },
     {
-      "run_id": "demo0154",
-      "timestamp": "2026-07-01T15:12:00.805371Z",
+      "run_id": "demo0155",
+      "timestamp": "2026-07-01T15:12:00.338660Z",
       "git_sha": "fa63bfd",
-      "branch": "feat/demo-154",
-      "pr_number": 254,
+      "branch": "feat/demo-155",
+      "pr_number": 255,
       "event_type": "pr",
       "posture_score_before": 83.3,
       "posture_score_after": 83.6,
@@ -1321,11 +1277,11 @@
       "duration_seconds": 72.1
     },
     {
-      "run_id": "demo0158",
-      "timestamp": "2026-07-02T11:06:00.805371Z",
+      "run_id": "demo0159",
+      "timestamp": "2026-07-02T11:06:00.338660Z",
       "git_sha": "31ad6dd",
-      "branch": "feat/demo-158",
-      "pr_number": 258,
+      "branch": "feat/demo-159",
+      "pr_number": 259,
       "event_type": "pr",
       "posture_score_before": 84.8,
       "posture_score_after": 85.2,
@@ -1343,11 +1299,11 @@
       "duration_seconds": 56.0
     },
     {
-      "run_id": "demo0157",
-      "timestamp": "2026-07-02T17:34:00.805371Z",
+      "run_id": "demo0158",
+      "timestamp": "2026-07-02T17:34:00.338660Z",
       "git_sha": "b2850fb",
-      "branch": "feat/demo-157",
-      "pr_number": 257,
+      "branch": "feat/demo-158",
+      "pr_number": 258,
       "event_type": "pr",
       "posture_score_before": 84.4,
       "posture_score_after": 84.8,
@@ -1365,11 +1321,11 @@
       "duration_seconds": 94.0
     },
     {
-      "run_id": "demo0159",
-      "timestamp": "2026-07-03T17:15:00.805371Z",
+      "run_id": "demo0160",
+      "timestamp": "2026-07-03T17:15:00.338660Z",
       "git_sha": "43adef0",
-      "branch": "feat/demo-159",
-      "pr_number": 259,
+      "branch": "feat/demo-160",
+      "pr_number": 260,
       "event_type": "pr",
       "posture_score_before": 85.2,
       "posture_score_after": 85.7,
@@ -1387,11 +1343,11 @@
       "duration_seconds": 58.8
     },
     {
-      "run_id": "demo0160",
-      "timestamp": "2026-07-05T09:21:00.805371Z",
+      "run_id": "demo0161",
+      "timestamp": "2026-07-05T09:21:00.338660Z",
       "git_sha": "ea032f1",
-      "branch": "feat/demo-160",
-      "pr_number": 260,
+      "branch": "feat/demo-161",
+      "pr_number": 261,
       "event_type": "pr",
       "posture_score_before": 85.7,
       "posture_score_after": 75.7,
@@ -1406,7 +1362,7 @@
         "NIST SC-7"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/360",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/361",
       "scanner_findings": {
         "checkov": 5,
         "tfsec": 6,
@@ -1415,8 +1371,8 @@
       "duration_seconds": 92.0
     },
     {
-      "run_id": "demo0161",
-      "timestamp": "2026-07-05T14:05:48.355405Z",
+      "run_id": "demo0162",
+      "timestamp": "2026-07-05T14:05:47.888694Z",
       "git_sha": "81be42c",
       "branch": "main",
       "pr_number": null,
@@ -1437,11 +1393,11 @@
       "duration_seconds": 53.1
     },
     {
-      "run_id": "demo0164",
-      "timestamp": "2026-07-06T11:06:00.805371Z",
+      "run_id": "demo0165",
+      "timestamp": "2026-07-06T11:06:00.338660Z",
       "git_sha": "9d82637",
-      "branch": "feat/demo-164",
-      "pr_number": 264,
+      "branch": "feat/demo-165",
+      "pr_number": 265,
       "event_type": "pr",
       "posture_score_before": 87.1,
       "posture_score_after": 87.7,
@@ -1459,11 +1415,11 @@
       "duration_seconds": 73.4
     },
     {
-      "run_id": "demo0163",
-      "timestamp": "2026-07-06T12:09:00.805371Z",
+      "run_id": "demo0164",
+      "timestamp": "2026-07-06T12:09:00.338660Z",
       "git_sha": "9ddfd69",
-      "branch": "feat/demo-163",
-      "pr_number": 263,
+      "branch": "feat/demo-164",
+      "pr_number": 264,
       "event_type": "pr",
       "posture_score_before": 86.9,
       "posture_score_after": 87.1,
@@ -1481,11 +1437,11 @@
       "duration_seconds": 54.8
     },
     {
-      "run_id": "demo0165",
-      "timestamp": "2026-07-06T12:19:00.805371Z",
+      "run_id": "demo0166",
+      "timestamp": "2026-07-06T12:19:00.338660Z",
       "git_sha": "43593a4",
-      "branch": "feat/demo-165",
-      "pr_number": 265,
+      "branch": "feat/demo-166",
+      "pr_number": 266,
       "event_type": "pr",
       "posture_score_before": 87.7,
       "posture_score_after": 87.9,
@@ -1503,11 +1459,11 @@
       "duration_seconds": 51.1
     },
     {
-      "run_id": "demo0162",
-      "timestamp": "2026-07-06T16:21:00.805371Z",
+      "run_id": "demo0163",
+      "timestamp": "2026-07-06T16:21:00.338660Z",
       "git_sha": "e817273",
-      "branch": "feat/demo-162",
-      "pr_number": 262,
+      "branch": "feat/demo-163",
+      "pr_number": 263,
       "event_type": "pr",
       "posture_score_before": 86.7,
       "posture_score_after": 86.9,
@@ -1525,11 +1481,11 @@
       "duration_seconds": 46.2
     },
     {
-      "run_id": "demo0167",
-      "timestamp": "2026-07-07T09:09:00.805371Z",
+      "run_id": "demo0168",
+      "timestamp": "2026-07-07T09:09:00.338660Z",
       "git_sha": "a8c5c59",
-      "branch": "feat/demo-167",
-      "pr_number": 267,
+      "branch": "feat/demo-168",
+      "pr_number": 268,
       "event_type": "pr",
       "posture_score_before": 88.4,
       "posture_score_after": 83.4,
@@ -1552,11 +1508,11 @@
       "duration_seconds": 68.6
     },
     {
-      "run_id": "demo0166",
-      "timestamp": "2026-07-07T15:42:00.805371Z",
+      "run_id": "demo0167",
+      "timestamp": "2026-07-07T15:42:00.338660Z",
       "git_sha": "155cb64",
-      "branch": "feat/demo-166",
-      "pr_number": 266,
+      "branch": "feat/demo-167",
+      "pr_number": 267,
       "event_type": "pr",
       "posture_score_before": 87.9,
       "posture_score_after": 88.4,
@@ -1574,11 +1530,11 @@
       "duration_seconds": 54.9
     },
     {
-      "run_id": "demo0168",
-      "timestamp": "2026-07-08T09:57:00.805371Z",
+      "run_id": "demo0169",
+      "timestamp": "2026-07-08T09:57:00.338660Z",
       "git_sha": "99bde24",
-      "branch": "feat/demo-168",
-      "pr_number": 268,
+      "branch": "feat/demo-169",
+      "pr_number": 269,
       "event_type": "pr",
       "posture_score_before": 83.4,
       "posture_score_after": 73.4,
@@ -1602,11 +1558,11 @@
       "duration_seconds": 50.7
     },
     {
-      "run_id": "demo0169",
-      "timestamp": "2026-07-08T18:28:00.805371Z",
+      "run_id": "demo0170",
+      "timestamp": "2026-07-08T18:28:00.338660Z",
       "git_sha": "d8c1f6d",
-      "branch": "feat/demo-169",
-      "pr_number": 269,
+      "branch": "feat/demo-170",
+      "pr_number": 270,
       "event_type": "pr",
       "posture_score_before": 73.4,
       "posture_score_after": 73.5,
@@ -1624,11 +1580,11 @@
       "duration_seconds": 59.6
     },
     {
-      "run_id": "demo0172",
-      "timestamp": "2026-07-09T11:22:00.805371Z",
+      "run_id": "demo0173",
+      "timestamp": "2026-07-09T11:22:00.338660Z",
       "git_sha": "6c051ba",
-      "branch": "feat/demo-172",
-      "pr_number": 272,
+      "branch": "feat/demo-173",
+      "pr_number": 273,
       "event_type": "pr",
       "posture_score_before": 74.8,
       "posture_score_after": 75.3,
@@ -1646,11 +1602,11 @@
       "duration_seconds": 99.2
     },
     {
-      "run_id": "demo0171",
-      "timestamp": "2026-07-09T12:25:00.805371Z",
+      "run_id": "demo0172",
+      "timestamp": "2026-07-09T12:25:00.338660Z",
       "git_sha": "625c242",
-      "branch": "feat/demo-171",
-      "pr_number": 271,
+      "branch": "feat/demo-172",
+      "pr_number": 272,
       "event_type": "pr",
       "posture_score_before": 74.1,
       "posture_score_after": 74.8,
@@ -1668,11 +1624,11 @@
       "duration_seconds": 88.0
     },
     {
-      "run_id": "demo0170",
-      "timestamp": "2026-07-09T15:04:00.805371Z",
+      "run_id": "demo0171",
+      "timestamp": "2026-07-09T15:04:00.338660Z",
       "git_sha": "029ee80",
-      "branch": "feat/demo-170",
-      "pr_number": 270,
+      "branch": "feat/demo-171",
+      "pr_number": 271,
       "event_type": "pr",
       "posture_score_before": 73.5,
       "posture_score_after": 74.1,
@@ -1690,11 +1646,11 @@
       "duration_seconds": 40.5
     },
     {
-      "run_id": "demo0175",
-      "timestamp": "2026-07-13T12:03:00.805371Z",
+      "run_id": "demo0176",
+      "timestamp": "2026-07-13T12:03:00.338660Z",
       "git_sha": "d2b27f7",
-      "branch": "feat/demo-175",
-      "pr_number": 275,
+      "branch": "feat/demo-176",
+      "pr_number": 276,
       "event_type": "pr",
       "posture_score_before": 76.3,
       "posture_score_after": 76.7,
@@ -1712,11 +1668,11 @@
       "duration_seconds": 45.1
     },
     {
-      "run_id": "demo0173",
-      "timestamp": "2026-07-13T18:34:00.805371Z",
+      "run_id": "demo0174",
+      "timestamp": "2026-07-13T18:34:00.338660Z",
       "git_sha": "4e6f2eb",
-      "branch": "feat/demo-173",
-      "pr_number": 273,
+      "branch": "feat/demo-174",
+      "pr_number": 274,
       "event_type": "pr",
       "posture_score_before": 75.3,
       "posture_score_after": 65.3,
@@ -1731,7 +1687,7 @@
         "NIST SC-7"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/373",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/374",
       "scanner_findings": {
         "checkov": 9,
         "tfsec": 3,
@@ -1740,8 +1696,8 @@
       "duration_seconds": 125.0
     },
     {
-      "run_id": "demo0174",
-      "timestamp": "2026-07-13T22:21:18.524865Z",
+      "run_id": "demo0175",
+      "timestamp": "2026-07-13T22:21:18.058154Z",
       "git_sha": "98fc287",
       "branch": "main",
       "pr_number": null,
@@ -1762,11 +1718,11 @@
       "duration_seconds": 44.2
     },
     {
-      "run_id": "demo0179",
-      "timestamp": "2026-07-14T11:00:00.805371Z",
+      "run_id": "demo0180",
+      "timestamp": "2026-07-14T11:00:00.338660Z",
       "git_sha": "1107cf7",
-      "branch": "feat/demo-179",
-      "pr_number": 279,
+      "branch": "feat/demo-180",
+      "pr_number": 280,
       "event_type": "pr",
       "posture_score_before": 77.9,
       "posture_score_after": 76.4,
@@ -1780,7 +1736,7 @@
         "NIST AU-2"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/379",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/380",
       "scanner_findings": {
         "checkov": 9,
         "tfsec": 5,
@@ -1789,8 +1745,8 @@
       "duration_seconds": 52.5
     },
     {
-      "run_id": "demo0180",
-      "timestamp": "2026-07-14T15:24:55.666580Z",
+      "run_id": "demo0181",
+      "timestamp": "2026-07-14T15:24:55.199869Z",
       "git_sha": "4c90e2d",
       "branch": "main",
       "pr_number": null,
@@ -1811,11 +1767,11 @@
       "duration_seconds": 48.3
     },
     {
-      "run_id": "demo0178",
-      "timestamp": "2026-07-14T15:42:00.805371Z",
+      "run_id": "demo0179",
+      "timestamp": "2026-07-14T15:42:00.338660Z",
       "git_sha": "248726b",
-      "branch": "feat/demo-178",
-      "pr_number": 278,
+      "branch": "feat/demo-179",
+      "pr_number": 279,
       "event_type": "pr",
       "posture_score_before": 77.7,
       "posture_score_after": 77.9,
@@ -1833,11 +1789,11 @@
       "duration_seconds": 94.6
     },
     {
-      "run_id": "demo0176",
-      "timestamp": "2026-07-14T16:59:00.805371Z",
+      "run_id": "demo0177",
+      "timestamp": "2026-07-14T16:59:00.338660Z",
       "git_sha": "1fdbc46",
-      "branch": "feat/demo-176",
-      "pr_number": 276,
+      "branch": "feat/demo-177",
+      "pr_number": 277,
       "event_type": "pr",
       "posture_score_before": 76.7,
       "posture_score_after": 66.7,
@@ -1851,7 +1807,7 @@
         "NIST AC-6"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/376",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/377",
       "scanner_findings": {
         "checkov": 5,
         "tfsec": 4,
@@ -1860,8 +1816,8 @@
       "duration_seconds": 65.2
     },
     {
-      "run_id": "demo0177",
-      "timestamp": "2026-07-14T22:39:00.202659Z",
+      "run_id": "demo0178",
+      "timestamp": "2026-07-14T22:38:59.735948Z",
       "git_sha": "f6be4e4",
       "branch": "main",
       "pr_number": null,
@@ -1882,11 +1838,11 @@
       "duration_seconds": 70.1
     },
     {
-      "run_id": "demo0181",
-      "timestamp": "2026-07-15T10:47:00.805371Z",
+      "run_id": "demo0182",
+      "timestamp": "2026-07-15T10:47:00.338660Z",
       "git_sha": "f64bf64",
-      "branch": "feat/demo-181",
-      "pr_number": 281,
+      "branch": "feat/demo-182",
+      "pr_number": 282,
       "event_type": "pr",
       "posture_score_before": 78.0,
       "posture_score_after": 78.2,
@@ -1904,11 +1860,11 @@
       "duration_seconds": 47.7
     },
     {
-      "run_id": "demo0184",
-      "timestamp": "2026-07-15T11:47:00.805371Z",
+      "run_id": "demo0185",
+      "timestamp": "2026-07-15T11:47:00.338660Z",
       "git_sha": "1f59df3",
-      "branch": "feat/demo-184",
-      "pr_number": 284,
+      "branch": "feat/demo-185",
+      "pr_number": 285,
       "event_type": "pr",
       "posture_score_before": 78.7,
       "posture_score_after": 78.9,
@@ -1926,11 +1882,11 @@
       "duration_seconds": 57.2
     },
     {
-      "run_id": "demo0182",
-      "timestamp": "2026-07-15T13:52:00.805371Z",
+      "run_id": "demo0183",
+      "timestamp": "2026-07-15T13:52:00.338660Z",
       "git_sha": "e79f05b",
-      "branch": "feat/demo-182",
-      "pr_number": 282,
+      "branch": "feat/demo-183",
+      "pr_number": 283,
       "event_type": "pr",
       "posture_score_before": 78.2,
       "posture_score_after": 73.2,
@@ -1944,7 +1900,7 @@
         "NIST SC-28"
       ],
       "auto_fix_pr_opened": true,
-      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/382",
+      "auto_fix_pr_url": "https://github.com/pragatig25/terraguard/pull/383",
       "scanner_findings": {
         "checkov": 5,
         "tfsec": 6,
@@ -1953,11 +1909,11 @@
       "duration_seconds": 69.0
     },
     {
-      "run_id": "demo0185",
-      "timestamp": "2026-07-15T15:20:00.805371Z",
+      "run_id": "demo0186",
+      "timestamp": "2026-07-15T15:20:00.338660Z",
       "git_sha": "57b1fc0",
-      "branch": "feat/demo-185",
-      "pr_number": 285,
+      "branch": "feat/demo-186",
+      "pr_number": 286,
       "event_type": "pr",
       "posture_score_before": 78.9,
       "posture_score_after": 68.9,
@@ -1981,8 +1937,8 @@
       "duration_seconds": 93.3
     },
     {
-      "run_id": "demo0183",
-      "timestamp": "2026-07-15T16:57:55.484443Z",
+      "run_id": "demo0184",
+      "timestamp": "2026-07-15T16:57:55.017732Z",
       "git_sha": "d96924b",
       "branch": "main",
       "pr_number": null,
@@ -2003,33 +1959,11 @@
       "duration_seconds": 52.3
     },
     {
-      "run_id": "demo0188",
-      "timestamp": "2026-07-16T08:17:06.805371Z",
-      "git_sha": "c94ba18",
-      "branch": "main",
-      "pr_number": null,
-      "event_type": "merge",
-      "posture_score_before": 58.0,
-      "posture_score_after": 88.0,
-      "score_delta": 30.0,
-      "regressions_introduced": 0,
-      "regressions_by_severity": {},
-      "benchmarks_violated": [],
-      "auto_fix_pr_opened": false,
-      "auto_fix_pr_url": null,
-      "scanner_findings": {
-        "checkov": 2,
-        "tfsec": 1,
-        "trivy": 3
-      },
-      "duration_seconds": 60.8
-    },
-    {
-      "run_id": "demo0186",
-      "timestamp": "2026-07-16T10:11:00.805371Z",
+      "run_id": "demo0187",
+      "timestamp": "2026-07-16T10:11:00.338660Z",
       "git_sha": "2b48e10",
-      "branch": "feat/demo-186",
-      "pr_number": 286,
+      "branch": "feat/demo-187",
+      "pr_number": 287,
       "event_type": "pr",
       "posture_score_before": 68.9,
       "posture_score_after": 58.9,
@@ -2053,11 +1987,11 @@
       "duration_seconds": 110.6
     },
     {
-      "run_id": "demo0187",
-      "timestamp": "2026-07-16T13:21:00.805371Z",
+      "run_id": "demo0188",
+      "timestamp": "2026-07-16T13:21:00.338660Z",
       "git_sha": "8da1ecf",
-      "branch": "feat/demo-187",
-      "pr_number": 287,
+      "branch": "feat/demo-188",
+      "pr_number": 288,
       "event_type": "pr",
       "posture_score_before": 58.9,
       "posture_score_after": 58.0,
@@ -2079,23 +2013,89 @@
         "trivy": 6
       },
       "duration_seconds": 68.9
+    },
+    {
+      "run_id": "demo0191",
+      "timestamp": "2026-07-17T08:12:43.338660Z",
+      "git_sha": "a92ff7d",
+      "branch": "main",
+      "pr_number": null,
+      "event_type": "merge",
+      "posture_score_before": 58.7,
+      "posture_score_after": 88.0,
+      "score_delta": 29.3,
+      "regressions_introduced": 0,
+      "regressions_by_severity": {},
+      "benchmarks_violated": [],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 2,
+        "tfsec": 1,
+        "trivy": 3
+      },
+      "duration_seconds": 44.6
+    },
+    {
+      "run_id": "demo0190",
+      "timestamp": "2026-07-17T15:53:00.338660Z",
+      "git_sha": "646c595",
+      "branch": "feat/demo-190",
+      "pr_number": 290,
+      "event_type": "pr",
+      "posture_score_before": 58.4,
+      "posture_score_after": 58.7,
+      "score_delta": 0.3,
+      "regressions_introduced": 0,
+      "regressions_by_severity": {},
+      "benchmarks_violated": [],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 4,
+        "tfsec": 3,
+        "trivy": 3
+      },
+      "duration_seconds": 50.1
+    },
+    {
+      "run_id": "demo0189",
+      "timestamp": "2026-07-17T17:12:00.338660Z",
+      "git_sha": "0c056c0",
+      "branch": "feat/demo-189",
+      "pr_number": 289,
+      "event_type": "pr",
+      "posture_score_before": 58.0,
+      "posture_score_after": 58.4,
+      "score_delta": 0.4,
+      "regressions_introduced": 0,
+      "regressions_by_severity": {},
+      "benchmarks_violated": [],
+      "auto_fix_pr_opened": false,
+      "auto_fix_pr_url": null,
+      "scanner_findings": {
+        "checkov": 2,
+        "tfsec": 2,
+        "trivy": 2
+      },
+      "duration_seconds": 86.2
     }
   ],
   "current_posture_score": 88.0,
   "posture_trend": [
     {
-      "date": "2026-06-19",
+      "date": "2026-06-22",
       "score": 92.0,
-      "pr_number": 229,
-      "delta": 0.1,
+      "pr_number": 235,
+      "delta": 0.0,
       "is_regression": false
     },
     {
-      "date": "2026-06-19",
-      "score": 92.0,
-      "pr_number": 230,
-      "delta": 0.0,
-      "is_regression": false
+      "date": "2026-06-22",
+      "score": 87.0,
+      "pr_number": 232,
+      "delta": -5.0,
+      "is_regression": true
     },
     {
       "date": "2026-06-22",
@@ -2106,23 +2106,16 @@
     },
     {
       "date": "2026-06-22",
-      "score": 87.0,
-      "pr_number": 231,
-      "delta": -5.0,
-      "is_regression": true
-    },
-    {
-      "date": "2026-06-22",
-      "score": 92.0,
-      "pr_number": 233,
-      "delta": 0.0,
-      "is_regression": false
-    },
-    {
-      "date": "2026-06-22",
       "score": 92.0,
       "pr_number": null,
       "delta": 6.0,
+      "is_regression": false
+    },
+    {
+      "date": "2026-06-23",
+      "score": 92.0,
+      "pr_number": 237,
+      "delta": 0.0,
       "is_regression": false
     },
     {
@@ -2135,14 +2128,21 @@
     {
       "date": "2026-06-23",
       "score": 92.0,
-      "pr_number": 235,
+      "pr_number": 238,
       "delta": 0.0,
       "is_regression": false
     },
     {
-      "date": "2026-06-23",
+      "date": "2026-06-24",
       "score": 92.0,
-      "pr_number": 237,
+      "pr_number": 243,
+      "delta": 0.0,
+      "is_regression": false
+    },
+    {
+      "date": "2026-06-24",
+      "score": 92.0,
+      "pr_number": 239,
       "delta": 0.0,
       "is_regression": false
     },
@@ -2155,22 +2155,8 @@
     },
     {
       "date": "2026-06-24",
-      "score": 92.0,
-      "pr_number": 238,
-      "delta": 0.0,
-      "is_regression": false
-    },
-    {
-      "date": "2026-06-24",
-      "score": 92.0,
-      "pr_number": 241,
-      "delta": 0.0,
-      "is_regression": false
-    },
-    {
-      "date": "2026-06-24",
       "score": 87.0,
-      "pr_number": 239,
+      "pr_number": 240,
       "delta": -5.0,
       "is_regression": true
     },
@@ -2184,9 +2170,16 @@
     {
       "date": "2026-06-25",
       "score": 82.0,
-      "pr_number": 245,
+      "pr_number": 246,
       "delta": -10.0,
       "is_regression": true
+    },
+    {
+      "date": "2026-06-25",
+      "score": 92.0,
+      "pr_number": 245,
+      "delta": 0.0,
+      "is_regression": false
     },
     {
       "date": "2026-06-25",
@@ -2196,114 +2189,107 @@
       "is_regression": false
     },
     {
-      "date": "2026-06-25",
-      "score": 92.0,
-      "pr_number": 243,
-      "delta": 0.0,
-      "is_regression": false
-    },
-    {
       "date": "2026-06-26",
       "score": 82.7,
-      "pr_number": 246,
+      "pr_number": 247,
       "delta": 0.7,
       "is_regression": false
     },
     {
       "date": "2026-06-27",
       "score": 82.9,
-      "pr_number": 247,
+      "pr_number": 248,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-06-29",
       "score": 83.4,
-      "pr_number": 248,
+      "pr_number": 249,
       "delta": 0.5,
       "is_regression": false
     },
     {
       "date": "2026-06-29",
       "score": 83.5,
-      "pr_number": 249,
+      "pr_number": 250,
       "delta": 0.1,
       "is_regression": false
     },
     {
       "date": "2026-06-30",
       "score": 82.8,
-      "pr_number": 252,
+      "pr_number": 253,
       "delta": 0.1,
       "is_regression": false
     },
     {
       "date": "2026-06-30",
       "score": 82.7,
-      "pr_number": 251,
+      "pr_number": 252,
       "delta": 0.7,
       "is_regression": false
     },
     {
       "date": "2026-06-30",
       "score": 82.0,
-      "pr_number": 250,
+      "pr_number": 251,
       "delta": -1.5,
       "is_regression": true
     },
     {
       "date": "2026-07-01",
       "score": 83.3,
-      "pr_number": 253,
+      "pr_number": 254,
       "delta": 0.5,
       "is_regression": false
     },
     {
       "date": "2026-07-01",
       "score": 84.0,
-      "pr_number": 255,
-      "delta": 0.4,
-      "is_regression": false
-    },
-    {
-      "date": "2026-07-01",
-      "score": 84.4,
       "pr_number": 256,
       "delta": 0.4,
       "is_regression": false
     },
     {
       "date": "2026-07-01",
+      "score": 84.4,
+      "pr_number": 257,
+      "delta": 0.4,
+      "is_regression": false
+    },
+    {
+      "date": "2026-07-01",
       "score": 83.6,
-      "pr_number": 254,
+      "pr_number": 255,
       "delta": 0.3,
       "is_regression": false
     },
     {
       "date": "2026-07-02",
       "score": 85.2,
-      "pr_number": 258,
+      "pr_number": 259,
       "delta": 0.4,
       "is_regression": false
     },
     {
       "date": "2026-07-02",
       "score": 84.8,
-      "pr_number": 257,
+      "pr_number": 258,
       "delta": 0.4,
       "is_regression": false
     },
     {
       "date": "2026-07-03",
       "score": 85.7,
-      "pr_number": 259,
+      "pr_number": 260,
       "delta": 0.5,
       "is_regression": false
     },
     {
       "date": "2026-07-05",
       "score": 75.7,
-      "pr_number": 260,
+      "pr_number": 261,
       "delta": -10.0,
       "is_regression": true
     },
@@ -2317,91 +2303,91 @@
     {
       "date": "2026-07-06",
       "score": 87.7,
-      "pr_number": 264,
+      "pr_number": 265,
       "delta": 0.6,
       "is_regression": false
     },
     {
       "date": "2026-07-06",
       "score": 87.1,
-      "pr_number": 263,
+      "pr_number": 264,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-07-06",
       "score": 87.9,
-      "pr_number": 265,
+      "pr_number": 266,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-07-06",
       "score": 86.9,
-      "pr_number": 262,
+      "pr_number": 263,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-07-07",
       "score": 83.4,
-      "pr_number": 267,
+      "pr_number": 268,
       "delta": -5.0,
       "is_regression": true
     },
     {
       "date": "2026-07-07",
       "score": 88.4,
-      "pr_number": 266,
+      "pr_number": 267,
       "delta": 0.5,
       "is_regression": false
     },
     {
       "date": "2026-07-08",
       "score": 73.4,
-      "pr_number": 268,
+      "pr_number": 269,
       "delta": -10.0,
       "is_regression": true
     },
     {
       "date": "2026-07-08",
       "score": 73.5,
-      "pr_number": 269,
+      "pr_number": 270,
       "delta": 0.1,
       "is_regression": false
     },
     {
       "date": "2026-07-09",
       "score": 75.3,
-      "pr_number": 272,
+      "pr_number": 273,
       "delta": 0.5,
       "is_regression": false
     },
     {
       "date": "2026-07-09",
       "score": 74.8,
-      "pr_number": 271,
+      "pr_number": 272,
       "delta": 0.7,
       "is_regression": false
     },
     {
       "date": "2026-07-09",
       "score": 74.1,
-      "pr_number": 270,
+      "pr_number": 271,
       "delta": 0.6,
       "is_regression": false
     },
     {
       "date": "2026-07-13",
       "score": 76.7,
-      "pr_number": 275,
+      "pr_number": 276,
       "delta": 0.4,
       "is_regression": false
     },
     {
       "date": "2026-07-13",
       "score": 65.3,
-      "pr_number": 273,
+      "pr_number": 274,
       "delta": -10.0,
       "is_regression": true
     },
@@ -2415,7 +2401,7 @@
     {
       "date": "2026-07-14",
       "score": 76.4,
-      "pr_number": 279,
+      "pr_number": 280,
       "delta": -1.5,
       "is_regression": true
     },
@@ -2429,14 +2415,14 @@
     {
       "date": "2026-07-14",
       "score": 77.9,
-      "pr_number": 278,
+      "pr_number": 279,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-07-14",
       "score": 66.7,
-      "pr_number": 276,
+      "pr_number": 277,
       "delta": -10.0,
       "is_regression": true
     },
@@ -2450,28 +2436,28 @@
     {
       "date": "2026-07-15",
       "score": 78.2,
-      "pr_number": 281,
+      "pr_number": 282,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-07-15",
       "score": 78.9,
-      "pr_number": 284,
+      "pr_number": 285,
       "delta": 0.2,
       "is_regression": false
     },
     {
       "date": "2026-07-15",
       "score": 73.2,
-      "pr_number": 282,
+      "pr_number": 283,
       "delta": -5.0,
       "is_regression": true
     },
     {
       "date": "2026-07-15",
       "score": 68.9,
-      "pr_number": 285,
+      "pr_number": 286,
       "delta": -10.0,
       "is_regression": true
     },
@@ -2484,24 +2470,38 @@
     },
     {
       "date": "2026-07-16",
-      "score": 88.0,
-      "pr_number": null,
-      "delta": 30.0,
-      "is_regression": false
-    },
-    {
-      "date": "2026-07-16",
       "score": 58.9,
-      "pr_number": 286,
+      "pr_number": 287,
       "delta": -10.0,
       "is_regression": true
     },
     {
       "date": "2026-07-16",
       "score": 58.0,
-      "pr_number": 287,
+      "pr_number": 288,
       "delta": -0.9,
       "is_regression": true
+    },
+    {
+      "date": "2026-07-17",
+      "score": 88.0,
+      "pr_number": null,
+      "delta": 29.3,
+      "is_regression": false
+    },
+    {
+      "date": "2026-07-17",
+      "score": 58.7,
+      "pr_number": 290,
+      "delta": 0.3,
+      "is_regression": false
+    },
+    {
+      "date": "2026-07-17",
+      "score": 58.4,
+      "pr_number": 289,
+      "delta": 0.4,
+      "is_regression": false
     }
   ],
   "top_violated_controls": [
@@ -2512,10 +2512,6 @@
     {
       "control": "NIST SC-7",
       "count": 6
-    },
-    {
-      "control": "NIST AU-2",
-      "count": 3
     },
     {
       "control": "NIST SC-28",
@@ -2530,10 +2526,6 @@
       "count": 3
     },
     {
-      "control": "CIS 3.1",
-      "count": 2
-    },
-    {
       "control": "CIS 2.1.1",
       "count": 2
     },
@@ -2544,6 +2536,14 @@
     {
       "control": "NIST AC-6",
       "count": 2
+    },
+    {
+      "control": "NIST AU-2",
+      "count": 2
+    },
+    {
+      "control": "CIS 2.1.2",
+      "count": 1
     }
   ],
   "regression_heatmap": [
@@ -2558,24 +2558,14 @@
       "worst_severity": "HIGH"
     },
     {
-      "date": "2026-04-22",
-      "count": 1,
-      "worst_severity": "HIGH"
-    },
-    {
-      "date": "2026-04-23",
-      "count": 1,
-      "worst_severity": "CRITICAL"
-    },
-    {
       "date": "2026-04-28",
-      "count": 2,
-      "worst_severity": "CRITICAL"
+      "count": 1,
+      "worst_severity": "MEDIUM"
     },
     {
       "date": "2026-04-30",
       "count": 1,
-      "worst_severity": "HIGH"
+      "worst_severity": "MEDIUM"
     },
     {
       "date": "2026-05-04",
@@ -2703,9 +2693,9 @@
       "worst_severity": "CRITICAL"
     }
   ],
-  "total_regressions_30d": 15,
-  "total_auto_fixes_30d": 8,
-  "mean_time_to_remediate_hours": 5.6,
+  "total_regressions_30d": 14,
+  "total_auto_fixes_30d": 7,
+  "mean_time_to_remediate_hours": 6.5,
   "controls_tested": 18,
   "controls_total": 18
 }
